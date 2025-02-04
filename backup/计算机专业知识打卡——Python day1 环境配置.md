@@ -15,6 +15,10 @@ Anaconda利用工具/命令Conda来进行package和environment的管理，并且
 
 **我们使用Anaconda的理由在于其卓越且便捷地管理受信任Python软件包和环境的能力。在Python的高级应用中，特别是在涉及人工智能领域（如cuda、pytorch等，这些工具对Python版本和软件包版本有特定要求和限制）时，Anaconda能够轻松解决版本兼容性问题，为我们提供极大的便利。**
 ## 2、Anaconda的下载安装：
+访问Anaconda官网[Anaconda官网下载](https://www.anaconda.com/download/success)
+
+选择Windows操作系统进行下载。
+![Image](https://github.com/user-attachments/assets/75d47b10-dceb-4b71-8fb4-332e62181cd0)
 
 ## 3、Anaconda默认盘符更改：
 ## 4、Anaconda换源：
