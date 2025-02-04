@@ -41,8 +41,55 @@ Anaconda利用工具/命令Conda来进行package和environment的管理，并且
 ![Image](https://github.com/user-attachments/assets/85c5f4df-4806-4217-ab70-d8eed31a43a6)
 
 ![Image](https://github.com/user-attachments/assets/96f9ac92-66e2-4212-bbbb-4bc16ab43a42)
+`3、4、5均参考博客：`[最新版最详细Anaconda新手安装+配置+环境创建教程](https://blog.csdn.net/qq_44000789/article/details/142214660)
+## 3、设置环境变量：
+### （1）打开环境变量界面：
+- Win7：应该很少人用了，所以略，可以搜索引擎搜索
+- Win10：设置→系统→关于→高级系统设置→环境变量
 
-## 3、Anaconda默认盘符更改：
-## 4、Anaconda换源：
-## 5、Anaconda基础命令：
+![Image](https://github.com/user-attachments/assets/b8149eb3-2e7a-4f82-b8a1-9b4440a1fecd)
+
+![Image](https://github.com/user-attachments/assets/98e2e015-c281-43f3-ac1e-edc164afc43b)
+
+![Image](https://github.com/user-attachments/assets/12e668b6-4ded-4cb5-bbc7-417ee359c6d6)
+
+![Image](https://github.com/user-attachments/assets/87fa5132-768b-4501-a0cb-9ccf8915b151)
+
+- Win11：设置→系统→系统信息→高级系统设置→环境变量
+
+![Image](https://github.com/user-attachments/assets/d3bab8c6-8e46-46d8-817f-dc7409db45cc)
+
+![Image](https://github.com/user-attachments/assets/cd4eac48-4683-408f-a0c2-a73e1d870856)
+
+![Image](https://github.com/user-attachments/assets/e14fbd8e-bfd7-4a58-a5fc-92f2fabe3dd9)
+
+![Image](https://github.com/user-attachments/assets/89ee76e6-d231-41a0-a436-67cab09f2088)
+
+### （2）点击系统变量的“Path”变量，双击（或点击“编辑”），打开环境变量界面：
+
+![Image](https://github.com/user-attachments/assets/8af42623-33b0-4597-849c-2577b5bcc65e)
+
+![Image](https://github.com/user-attachments/assets/fe95ba6a-dc0d-4844-81eb-b3b7a8296e8f)
+### （3）点击“新建”（知道安装目录相关路径的情况）或“浏览”（不知道安装目录相关路径的情况，推荐）：
+新建Anaconda的4个相关路径：
+- ~（安装目录根目录）
+- \Scripts
+- \Library\bin
+- \Library\mingw-w64\bin
+
+![Image](https://github.com/user-attachments/assets/ff621b9c-1e96-4ac3-abcd-eccd3df99f7f)
+然后点击一路点击确认
+### （4）验证：
+“Win+R”打开运行窗口，输入“cmd”打开命令行窗口
+
+![Image](https://github.com/user-attachments/assets/764deb6f-e5da-4aae-b12f-992bfb32c746)
+
+输入“conda --version”命令，出现版本号即为设置成功
+
+![Image](https://github.com/user-attachments/assets/1af9f5d9-8dcb-4188-92c0-7cbc8183f52a)
+
+## 4、Anaconda默认环境保存路径更改：
+**没有修改的conda的pkgs和envs均保存在C盘，为了不占用系统盘的空间，我们需要修改保存的位置**
+## 5、Anaconda换源：
+## 6、Anaconda基础命令：
 # *二、下载安装Visual Studio Code：
