@@ -98,7 +98,7 @@ conda --version
 conda config --set show_channel_urls yes
 ```
 
-![Image](https://github.com/user-attachments/assets/2080a067-15bf-47e1-a74f-9c4ea12df73e)
+![Image](https://github.com/user-attachments/assets/7b870b90-0168-44e2-8d22-2a82d5eb0db1)
 
 使用**记事本**打开.condarc文件
 
