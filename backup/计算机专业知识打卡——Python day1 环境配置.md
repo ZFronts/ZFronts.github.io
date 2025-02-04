@@ -86,12 +86,43 @@ Anaconda利用工具/命令Conda来进行package和environment的管理，并且
 
 输入“conda --version”命令，出现版本号即为设置成功
 ```shell
-conda --version```
+conda --version
+```
 
 ![Image](https://github.com/user-attachments/assets/1af9f5d9-8dcb-4188-92c0-7cbc8183f52a)
 
 ## 4、Anaconda默认环境保存路径更改：
 **没有修改的conda的pkgs和envs均保存在C盘，为了不占用系统盘的空间，我们需要修改保存的位置**
+在C:/用户/用户名，找到.condarc文件，如果找不到打开cmd命令行输入以下命令
+```shell
+conda config --set show_channel_urls yes
+```
+
+![Image](https://github.com/user-attachments/assets/2080a067-15bf-47e1-a74f-9c4ea12df73e)
+
+使用**记事本**打开.condarc文件
+
+![Image](https://github.com/user-attachments/assets/c0914343-8e47-48eb-8ab8-c9ce2056aaba)
+
+ **删除其他的**，输入以下内容【注意修改为自己想要安装的盘，我这里修改为E盘】
+```
+envs_dirs:
+  - E:\anaconda3\envs
+pkgs_dirs:
+  - E:\anaconda3\pkgs
+```
+
+![Image](https://github.com/user-attachments/assets/6d605ec1-5f6b-4ca5-b04d-173721cfd46c)
+
+保存后关闭，在cmd命令行窗口中输入以下命令查看是否更改成功
+```shell
+conda info
+```
+
+![Image](https://github.com/user-attachments/assets/c73412c0-7b64-43c6-9179-8c082728a19b)
+<ins>修改前为</ins>
+
+![Image](https://github.com/user-attachments/assets/15e85dbc-d7e7-4491-bfef-40f143ec0b27)
 
 ## 5、Anaconda换源：
 ## 6、Anaconda基础命令：

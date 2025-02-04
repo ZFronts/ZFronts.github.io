@@ -158,16 +158,30 @@ Anaconda利用工具/命令Conda来进行package和environment的管理，并且
 <p>“Win+R”打开运行窗口，输入“cmd”打开命令行窗口</p>
 <p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/764deb6f-e5da-4aae-b12f-992bfb32c746"><img src="https://github.com/user-attachments/assets/764deb6f-e5da-4aae-b12f-992bfb32c746" alt="Image" style="max-width: 100%;"></a></p>
 <p>输入“conda --version”命令，出现版本号即为设置成功</p>
-<div class="highlight highlight-source-shell"><pre class="notranslate">conda --version<span class="pl-s"><span class="pl-pds">`</span><span class="pl-pds">`</span><span class="pl-pds">`</span></span>
-<span class="pl-s"></span>
-<span class="pl-s"><span class="pl-k">!</span>[Image](https://github.com/user-attachments/assets/1af9f5d9-8dcb-4188-92c0-7cbc8183f52a)</span>
-<span class="pl-s"></span>
-<span class="pl-s"><span class="pl-c"><span class="pl-c">#</span># 4、Anaconda默认环境保存路径更改：</span></span>
-<span class="pl-s"><span class="pl-k">**</span>没有修改的conda的pkgs和envs均保存在C盘，为了不占用系统盘的空间，我们需要修改保存的位置<span class="pl-k">**</span></span>
-<span class="pl-s"></span>
-<span class="pl-s"><span class="pl-c"><span class="pl-c">#</span># 5、Anaconda换源：</span></span>
-<span class="pl-s"><span class="pl-c"><span class="pl-c">#</span># 6、Anaconda基础命令：</span></span>
-<span class="pl-s"><span class="pl-c"><span class="pl-c">#</span> *二、下载安装Visual Studio Code：</span></span></pre></div></div>
+<div class="highlight highlight-source-shell"><pre class="notranslate">conda --version</pre></div>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/1af9f5d9-8dcb-4188-92c0-7cbc8183f52a"><img src="https://github.com/user-attachments/assets/1af9f5d9-8dcb-4188-92c0-7cbc8183f52a" alt="Image" style="max-width: 100%;"></a></p>
+<h2>4、Anaconda默认环境保存路径更改：</h2>
+<p><strong>没有修改的conda的pkgs和envs均保存在C盘，为了不占用系统盘的空间，我们需要修改保存的位置</strong><br>
+在C:/用户/用户名，找到.condarc文件，如果找不到打开cmd命令行输入以下命令</p>
+<div class="highlight highlight-source-shell"><pre class="notranslate">conda config --set show_channel_urls yes</pre></div>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/2080a067-15bf-47e1-a74f-9c4ea12df73e"><img src="https://github.com/user-attachments/assets/2080a067-15bf-47e1-a74f-9c4ea12df73e" alt="Image" style="max-width: 100%;"></a></p>
+<p>使用<strong>记事本</strong>打开.condarc文件</p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/c0914343-8e47-48eb-8ab8-c9ce2056aaba"><img src="https://github.com/user-attachments/assets/c0914343-8e47-48eb-8ab8-c9ce2056aaba" alt="Image" style="max-width: 100%;"></a></p>
+<p><strong>删除其他的</strong>，输入以下内容【注意修改为自己想要安装的盘，我这里修改为E盘】</p>
+<pre class="notranslate"><code class="notranslate">envs_dirs:
+  - E:\anaconda3\envs
+pkgs_dirs:
+  - E:\anaconda3\pkgs
+</code></pre>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/6d605ec1-5f6b-4ca5-b04d-173721cfd46c"><img src="https://github.com/user-attachments/assets/6d605ec1-5f6b-4ca5-b04d-173721cfd46c" alt="Image" style="max-width: 100%;"></a></p>
+<p>保存后关闭，在cmd命令行窗口中输入以下命令查看是否更改成功</p>
+<div class="highlight highlight-source-shell"><pre class="notranslate">conda info</pre></div>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/c73412c0-7b64-43c6-9179-8c082728a19b"><img src="https://github.com/user-attachments/assets/c73412c0-7b64-43c6-9179-8c082728a19b" alt="Image" style="max-width: 100%;"></a><br>
+<ins>修改前为</ins></p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/15e85dbc-d7e7-4491-bfef-40f143ec0b27"><img src="https://github.com/user-attachments/assets/15e85dbc-d7e7-4491-bfef-40f143ec0b27" alt="Image" style="max-width: 100%;"></a></p>
+<h2>5、Anaconda换源：</h2>
+<h2>6、Anaconda基础命令：</h2>
+<h1>*二、下载安装Visual Studio Code：</h1></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
