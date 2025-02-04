@@ -10,7 +10,7 @@ Anaconda是一个为AI和数据科学提供支持的平台。它提供经过严�
 - Windows、MacOS 或 Linux 上的分发安装
 
 `接下来两段的内容来源于博客：`[Anaconda介绍](https://blog.csdn.net/u011125673/article/details/115295955)
-因为包含了大量的科学包，Anaconda 的下载文件比较大（约 531 MB），如果只需要某些包，或者需要节省带宽或存储空间，也可以使用Miniconda这个较小的发行版（仅包Conda和Python）。
+因为包含了大量的科学包，Anaconda 的下载文件比较大，如果只需要某些包，或者需要节省带宽或存储空间，也可以使用Miniconda这个较小的发行版（仅包Conda和Python）。
 Anaconda利用工具/命令Conda来进行package和environment的管理，并且已经包含了Python和相关的配套工具。
 
 **我们使用Anaconda的理由在于其卓越且便捷地管理受信任Python软件包和环境的能力。在Python的高级应用中，特别是在涉及人工智能领域（如cuda、pytorch等，这些工具对Python版本和软件包版本有特定要求和限制）时，Anaconda能够轻松解决版本兼容性问题，为我们提供极大的便利。**
