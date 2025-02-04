@@ -85,7 +85,8 @@ Anaconda利用工具/命令Conda来进行package和environment的管理，并且
 ![Image](https://github.com/user-attachments/assets/764deb6f-e5da-4aae-b12f-992bfb32c746)
 
 输入“conda --version”命令，出现版本号即为设置成功
-`conda --version`
+```shell
+conda --version```
 
 ![Image](https://github.com/user-attachments/assets/1af9f5d9-8dcb-4188-92c0-7cbc8183f52a)
 
