@@ -222,10 +222,11 @@ conda config --set show_channel_urls yes
 <pre class="notranslate"><code class="notranslate">conda update conda
 </code></pre>
 <ul>
-<li>查询某个命令的帮助<br>
-···<br>
-conda 具体命令 --help<br>
-···</li>
+<li>查询某个命令的帮助</li>
+</ul>
+<pre class="notranslate"><code class="notranslate">conda 具体命令 --help
+</code></pre>
+<ul>
 <li>创建虚拟环境</li>
 </ul>
 <pre class="notranslate"><code class="notranslate">conda create -n 虚拟环境名 python=Python版本
@@ -233,14 +234,13 @@ conda 具体命令 --help<br>
 <p>这表示创建python版本为3.8、名字为env_name的虚拟环境。</p>
 <p>创建后，env_name文件可以在Anaconda安装目录envs文件下找到。在不指定python版本时，自动创建基于最新python版本的虚拟环境</p>
 <ul>
-<li>删除虚拟环境<br>
-···</li>
+<li>删除虚拟环境</li>
 </ul>
-<h1>删除指定虚拟环境及其中所有安装的包</h1>
-<p>conda remove --name 虚拟环境名 --all</p>
-<h1>删除指定虚拟环境中指定的包</h1>
-<p>conda remove --name 虚拟环境名 包名<br>
-···</p>
+<pre class="notranslate"><code class="notranslate"># 删除指定虚拟环境及其中所有安装的包
+conda remove --name 虚拟环境名 --all
+# 删除指定虚拟环境中指定的包
+conda remove --name 虚拟环境名 包名
+</code></pre>
 <ul>
 <li>查看有哪些虚拟环境<br>
 以下三条命令都可以</li>

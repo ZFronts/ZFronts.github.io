@@ -171,9 +171,9 @@ conda --version
 conda update conda
 ```
 - 查询某个命令的帮助
-···
+```
 conda 具体命令 --help
-···
+```
 - 创建虚拟环境
 ```
 conda create -n 虚拟环境名 python=Python版本
@@ -182,12 +182,12 @@ conda create -n 虚拟环境名 python=Python版本
 
 创建后，env_name文件可以在Anaconda安装目录envs文件下找到。在不指定python版本时，自动创建基于最新python版本的虚拟环境
 - 删除虚拟环境
-···
+```
 # 删除指定虚拟环境及其中所有安装的包
 conda remove --name 虚拟环境名 --all
 # 删除指定虚拟环境中指定的包
 conda remove --name 虚拟环境名 包名
-···
+```
 - 查看有哪些虚拟环境
 以下三条命令都可以
 ```
