@@ -34,7 +34,14 @@ Anaconda利用工具/命令Conda来进行package和environment的管理，并且
 ![Image](https://github.com/user-attachments/assets/8ae190d5-7ce6-4891-8813-1ea73506cb5d)
 
 ![Image](https://github.com/user-attachments/assets/f2e431c2-3bbf-4ed9-9f6e-8444e74711bb)
-接下来等待安装完成，点击“Finish”即可
+
+接下来等待安装完成，安装完成后一路“Next”直到完成界面
+![Image](https://github.com/user-attachments/assets/e5ac0e79-3c5a-445c-84a8-50d47fbae270)
+
+![Image](https://github.com/user-attachments/assets/d665aac4-b00e-4d57-b708-25456e750f6c)
+
+![Image](https://github.com/user-attachments/assets/96f9ac92-66e2-4212-bbbb-4bc16ab43a42)
+
 ## 3、Anaconda默认盘符更改：
 ## 4、Anaconda换源：
 ## 5、Anaconda基础命令：
