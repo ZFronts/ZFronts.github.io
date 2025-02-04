@@ -4,6 +4,11 @@
 ## 1、Anaconda介绍：
 Anaconda是一个为AI和数据科学提供支持的平台。它提供经过严格测试和验证的数据和AI模型。通过Anaconda Navigator，用户可以更轻松地访问数据科学工具和资源。
 
+- 轻松搜索和安装数千个数据科学、机器学习和 AI 软件包
+- 从桌面应用程序管理包和环境，或从命令行工作
+- 跨硬件和软件平台部署
+- Windows、MacOS 或 Linux 上的分发安装
+
 `接下来两段的内容来源于博客：`[Anaconda介绍](https://blog.csdn.net/u011125673/article/details/115295955)
 因为包含了大量的科学包，Anaconda 的下载文件比较大（约 531 MB），如果只需要某些包，或者需要节省带宽或存储空间，也可以使用Miniconda这个较小的发行版（仅包Conda和Python）。
 Anaconda利用工具/命令Conda来进行package和environment的管理，并且已经包含了Python和相关的配套工具。
