@@ -22,6 +22,19 @@ Anaconda利用工具/命令Conda来进行package和environment的管理，并且
 `Miniconda的下载就在Anaconda下方`
 ![Image](https://github.com/user-attachments/assets/a9de01bd-de4c-40a7-9f2f-feda868ca389)
 
+下载完成后运行安装程序，安装过程见下图
+
+![Image](https://github.com/user-attachments/assets/42f79159-1089-49c0-98e7-2e768a8fab4c)
+
+![Image](https://github.com/user-attachments/assets/c3440437-dcdc-4a49-af53-3e810a3f826f)
+
+`选择仅个人的话，后面可能会报错`
+![Image](https://github.com/user-attachments/assets/675ff56e-5152-4006-ba1a-22f92f748a08)
+
+![Image](https://github.com/user-attachments/assets/8ae190d5-7ce6-4891-8813-1ea73506cb5d)
+
+![Image](https://github.com/user-attachments/assets/f2e431c2-3bbf-4ed9-9f6e-8444e74711bb)
+接下来等待安装完成，点击“Finish”即可
 ## 3、Anaconda默认盘符更改：
 ## 4、Anaconda换源：
 ## 5、Anaconda基础命令：
