@@ -125,5 +125,101 @@ conda info
 ![Image](https://github.com/user-attachments/assets/15e85dbc-d7e7-4491-bfef-40f143ec0b27)
 
 ## 5、Anaconda换源：
-## 6、Anaconda基础命令：
+因为conda很多下载的东西在国外，默认的下载速度往往会很慢，这里建议修改为清华的镜像源（其它源如豆瓣源等请自行搜索）
+打开cmd命令行窗口，输入以下命令（选一个源输入即可）
+```
+# 添加清华源
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/
+ 
+# 添加阿里云镜像源
+conda config --add channels https://mirrors.aliyun.com/anaconda/pkgs/free/
+conda config --add channels https://mirrors.aliyun.com/anaconda/pkgs/main/
+ 
+# 添加中科大源
+conda config --add channels https://mirrors.ustc.edu.cn/anaconda/pkgs/free/
+conda config --add channels https://mirrors.ustc.edu.cn/anaconda/pkgs/main/
+conda config --add channels https://mirrors.ustc.edu.cn/anaconda/cloud/conda-forge/
+conda config --add channels https://mirrors.ustc.edu.cn/anaconda/cloud/msys2/
+conda config --add channels https://mirrors.ustc.edu.cn/anaconda/cloud/bioconda/
+conda config --add channels https://mirrors.ustc.edu.cn/anaconda/cloud/menpo/
+ 
+
+# （可选）设置搜索时显示通道地址
+conda config --set show_channel_urls yes
+```
+
+![Image](https://github.com/user-attachments/assets/b70932a5-a917-4695-936d-c1d0fb3fb051)
+
+`参考博客：`[Anaconda conda常用命令：从入门到精通](https://blog.csdn.net/chenxy_bwave/article/details/119996001)
+## 6、Anaconda常用命令：
+基本上都可以在cmd命令行窗口中使用以下指令查询conda命令用法
+```
+conda -h
+```
+
+![Image](https://github.com/user-attachments/assets/dd6f5420-2dd6-4bb7-b23f-8843d9dda721)
+
+以下列出几个最常用的
+- 查看conda版本
+```
+conda --version
+```
+- 更新conda
+```
+conda update conda
+```
+- 查询某个命令的帮助
+···
+conda 具体命令 --help
+···
+- 创建虚拟环境
+```
+conda create -n 虚拟环境名 python=Python版本
+```
+这表示创建python版本为3.8、名字为env_name的虚拟环境。
+
+创建后，env_name文件可以在Anaconda安装目录envs文件下找到。在不指定python版本时，自动创建基于最新python版本的虚拟环境
+- 删除虚拟环境
+···
+# 删除指定虚拟环境及其中所有安装的包
+conda remove --name 虚拟环境名 --all
+# 删除指定虚拟环境中指定的包
+conda remove --name 虚拟环境名 包名
+···
+- 查看有哪些虚拟环境
+以下三条命令都可以
+```
+conda env list
+conda info -e
+conda info --envs
+```
+- 激活虚拟环境
+```
+conda activate 虚拟环境名
+```
+- 退出虚拟环境
+```
+conda deactivate
+```
+- 查询包的安装情况
+```
+conda list
+pip list
+```
+二者差不多，差别在于包管理器一个是conda，一个是python自带的pip
+- 包的安装和更新
+```
+# 安装最新版本的包
+conda install 包名
+# 安装某个特定版本的包
+conda install 包名=版本号
+# 将某个包更新到它的最新版本
+conda update 包名
+```
+- 包的卸载
+```
+conda uninstall 包名
+```
 # *二、下载安装Visual Studio Code：
