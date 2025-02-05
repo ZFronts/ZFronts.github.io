@@ -419,7 +419,7 @@ IDLE（Integrated Development and Learning Environment）是 Python 官方默认
 
 ![Image](https://github.com/user-attachments/assets/6e89ab2d-41a5-4d05-9b13-b05fe413672b)
 
-![Image](https://github.com/user-attachments/assets/c22b11ec-ecdf-4f1a-a9d0-f270cfc7f27b)
+![Image](https://github.com/user-attachments/assets/a8836ce2-08a1-4380-aad3-a36b894faaff)
 
 ## 4、IDLE的使用：
 ### （1）运行：
@@ -463,6 +463,6 @@ print("1+2+……+n的和为%d"%sum)
 
 ![Image](https://github.com/user-attachments/assets/be890b6c-783d-4d4a-9a43-8b6465f8243c)
 
-![Image](https://github.com/user-attachments/assets/7788995f-c6d1-4635-80b1-d1580226901f)
+![Image](https://github.com/user-attachments/assets/ce630d95-713d-45c4-9c03-59c71ee7c145)
 
 # 四、PyCharm的下载安装及使用：
