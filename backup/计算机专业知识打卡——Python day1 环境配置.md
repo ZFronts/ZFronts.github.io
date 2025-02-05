@@ -341,7 +341,7 @@ print('Hello World!')
 
 ![Image](https://github.com/user-attachments/assets/a5d524ac-6217-4a1d-a917-f11be260d1c9)
 
-## （2）运行.py文件
+### （2）运行.py文件
 有三种运行方法
 一种是**在终端中输入命令**运行，如图所示打开终端，并输入以下命令（**这种方法需要注意命令执行的路径**）：
 
@@ -466,3 +466,55 @@ print("1+2+……+n的和为%d"%sum)
 ![Image](https://github.com/user-attachments/assets/ce630d95-713d-45c4-9c03-59c71ee7c145)
 
 # 四、PyCharm的下载安装及使用：
+## 1、PyCharm介绍：
+
+![Image](https://github.com/user-attachments/assets/91fb92b9-46bd-45ce-aaf4-935337cb3500)
+
+## 2、PyCharm的下载安装：
+PyCharm有社区版（Community）和专业版（Professional）两个版本，这里以专业版为例（可以免费试用30天，建议还是申请个学生认证，申请方式可以参考博客：[高校学生免费使用jetbrains产品指南（保姆级教程）](https://blog.csdn.net/m0_63451989/article/details/131743070)）
+
+访问PyCharm官网[PyCharm官网下载](https://www.jetbrains.com/pycharm/download/?section=windows)
+
+选择Windows操作系统进行下载。
+
+![Image](https://github.com/user-attachments/assets/e62513d3-9539-4569-9901-3801e33caf87)
+
+下载完成后运行安装程序，安装过程见下图
+
+![Image](https://github.com/user-attachments/assets/5d7c43a2-2c0b-4eae-861f-0c1b228a469e)
+
+![Image](https://github.com/user-attachments/assets/e5e709b2-137b-4e67-9c3a-27f936ae5a2d)
+
+![Image](https://github.com/user-attachments/assets/7d7596a1-a57d-4191-abaf-63aa7a058790)
+
+![Image](https://github.com/user-attachments/assets/d44c3a7b-93f0-414e-891f-5b4f17e5d633)
+
+![Image](https://github.com/user-attachments/assets/bb38b943-500d-4714-9f81-990b6eb266ed)
+
+## 3、PyCharm的配置：
+运行PyCharm，选择语言和地区，默认即可
+
+![Image](https://github.com/user-attachments/assets/2f859f07-20d2-4f3b-ad29-1d09813b0efc)
+
+![Image](https://github.com/user-attachments/assets/623ab83e-0447-469b-9986-94bbcae189a9)
+
+![Image](https://github.com/user-attachments/assets/3fb15bba-68c6-4f5c-b5b7-aa1d6ec61676)
+
+![Image](https://github.com/user-attachments/assets/857b593b-b682-45dc-9776-eebeb57e3f07)
+
+后面选“跳过导入”
+## 4、PyCharm的使用：
+### （1）新建项目：
+![Image](https://github.com/user-attachments/assets/fd8cda8b-576f-4e32-a3d8-d7cb0993404f)
+
+![Image](https://github.com/user-attachments/assets/3b81a4b9-d0a3-4e60-9435-3932f3422e99)
+
+![Image](https://github.com/user-attachments/assets/ab291158-5d79-4d3c-a828-8c89d52dfc36)
+
+![Image](https://github.com/user-attachments/assets/670adb75-eb18-48f4-a283-5fdc3ff343fb)
+
+![Image](https://github.com/user-attachments/assets/99b094c5-3942-4660-a16c-28ed6337ee88)
+
+### （2）运行.py文件：
+
+![Image](https://github.com/user-attachments/assets/bf5657bb-ae64-4999-86d2-21a7ab54be72)
