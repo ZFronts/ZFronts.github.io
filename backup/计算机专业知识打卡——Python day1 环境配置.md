@@ -206,9 +206,7 @@ conda deactivate
 - 查询包的安装情况
 ```
 conda list
-pip list
 ```
-二者差不多，差别在于包管理器一个是conda，一个是python自带的pip
 - 包的安装和更新
 ```
 # 安装最新版本的包
@@ -222,4 +220,72 @@ conda update 包名
 ```
 conda uninstall 包名
 ```
+## 7、使用：
+**按照上述流程配置好的Anaconda在cmd命令行窗口时是不会自动激活使用的**（Win11自带的wt终端会自动激活使用）
+所以我们需要执行以下命令：
+```
+# 第一次运行的话需要先执行conda init
+conda init
+# [base]代表可选
+conda activate [base]
+```
+
+![Image](https://github.com/user-attachments/assets/2dd5368b-07aa-417c-8a85-bec1a482980f)
+
+或者在应用菜单中找到“Anaconda Prompt应用”
+
+![Image](https://github.com/user-attachments/assets/7edb40d0-6532-4fd8-9a9d-e17fe26a3796)
+
 # *二、下载安装Visual Studio Code：
+## 1、Visual Studio Code介绍：
+Visual Studio Code（简称 VS Code）是由微软开发的一款免费、开源、跨平台的代码编辑器，适用于 Windows、macOS 和 Linux 系统。它结合了轻量级编辑器的灵活性和集成开发环境（IDE）的强大功能，逐渐成为开发者中备受欢迎的工具之一。
+
+**核心特点**
+- 轻量且高效：
+        启动速度快，占用系统资源少，适合快速编辑或大型项目开发。
+        原生支持多种编程语言（如 JavaScript、Python、Java、C++ 等），通过扩展可支持更多语言。
+- 强大的扩展生态系统
+        市场（Extensions Marketplace）提供数千款插件，涵盖调试、主题、代码补全、版本控制等功能。
+        热门扩展：Python、Prettier（代码格式化）、GitLens（Git 增强）、Live Server（实时网页预览）等。
+- 智能代码辅助
+        IntelliSense：基于上下文自动补全代码，支持变量、函数名和模块的智能提示。
+        语法高亮、代码折叠、错误检查（Linting）等功能提升编码效率。
+- 集成调试工具
+        内置调试器，支持断点、变量监视、调用堆栈跟踪，可直接调试 Node.js、Python、C# 等语言。
+        通过扩展支持更多调试场景（如浏览器调试）。
+- Git 版本控制集成
+        直接可视化操作 Git，支持提交、拉取、推送、分支管理、冲突解决等功能。
+- 终端与任务运行
+        内置终端（支持 PowerShell、CMD、Bash 等），可直接运行脚本或命令。
+        可配置任务（Tasks）自动化构建、测试流程。
+- 高度可定制
+        主题和图标包自由更换（如 Material Theme、One Dark Pro）。
+        用户设置（JSON 文件）支持键盘快捷键、界面布局、功能开关的个性化配置。
+- 跨平台协作
+        Live Share 功能支持多人实时协作编辑和调试，类似远程结对编程。
+
+**适用场景**
+- Web 开发：前端（HTML/CSS/JavaScript）、后端（Node.js、Python、PHP）开发。
+- 脚本与自动化：Python、Shell、PowerShell 等脚本编写。
+- 数据科学：通过扩展支持 Jupyter Notebook、数据可视化。
+- 云开发：集成 Azure、Docker、Kubernetes 等工具。
+## 2、VS Code的下载安装：
+访问VS Code官网[VS Code官网下载](https://code.visualstudio.com/Download)
+
+选择Windows操作系统进行下载。
+
+![Image](https://github.com/user-attachments/assets/645fdba3-c363-4063-be75-5ec969cde19c)
+
+下载完成后运行安装程序，安装过程见下图
+
+![Image](https://github.com/user-attachments/assets/cb393099-1322-4086-b949-467500982de7)
+
+![Image](https://github.com/user-attachments/assets/ff795e66-eb54-4631-b0bf-9756fa8395ad)
+
+![Image](https://github.com/user-attachments/assets/43e6cfa4-5ef3-4dd4-b451-1f84640b7e9d)
+
+![Image](https://github.com/user-attachments/assets/aaa72e08-9113-4d2f-89ce-8d38cbda356f)
+
+![Image](https://github.com/user-attachments/assets/f73a6145-3028-488a-b7e7-e27dcb86d6c3)
+
+![Image](https://github.com/user-attachments/assets/911d7d11-5e27-4edf-ba4f-2733bdaa1930)

@@ -263,9 +263,7 @@ conda info --envs
 <li>查询包的安装情况</li>
 </ul>
 <pre class="notranslate"><code class="notranslate">conda list
-pip list
 </code></pre>
-<p>二者差不多，差别在于包管理器一个是conda，一个是python自带的pip</p>
 <ul>
 <li>包的安装和更新</li>
 </ul>
@@ -281,7 +279,63 @@ conda update 包名
 </ul>
 <pre class="notranslate"><code class="notranslate">conda uninstall 包名
 </code></pre>
-<h1>*二、下载安装Visual Studio Code：</h1></div>
+<h2>7、使用：</h2>
+<p><strong>按照上述流程配置好的Anaconda在cmd命令行窗口时是不会自动激活使用的</strong>（Win11自带的wt终端会自动激活使用）<br>
+所以我们需要执行以下命令：</p>
+<pre class="notranslate"><code class="notranslate"># 第一次运行的话需要先执行conda init
+conda init
+# [base]代表可选
+conda activate [base]
+</code></pre>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/2dd5368b-07aa-417c-8a85-bec1a482980f"><img src="https://github.com/user-attachments/assets/2dd5368b-07aa-417c-8a85-bec1a482980f" alt="Image" style="max-width: 100%;"></a></p>
+<p>或者在应用菜单中找到“Anaconda Prompt应用”</p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/7edb40d0-6532-4fd8-9a9d-e17fe26a3796"><img src="https://github.com/user-attachments/assets/7edb40d0-6532-4fd8-9a9d-e17fe26a3796" alt="Image" style="max-width: 100%;"></a></p>
+<h1>*二、下载安装Visual Studio Code：</h1>
+<h2>1、Visual Studio Code介绍：</h2>
+<p>Visual Studio Code（简称 VS Code）是由微软开发的一款免费、开源、跨平台的代码编辑器，适用于 Windows、macOS 和 Linux 系统。它结合了轻量级编辑器的灵活性和集成开发环境（IDE）的强大功能，逐渐成为开发者中备受欢迎的工具之一。</p>
+<p><strong>核心特点</strong></p>
+<ul>
+<li>轻量且高效：<br>
+启动速度快，占用系统资源少，适合快速编辑或大型项目开发。<br>
+原生支持多种编程语言（如 JavaScript、Python、Java、C++ 等），通过扩展可支持更多语言。</li>
+<li>强大的扩展生态系统<br>
+市场（Extensions Marketplace）提供数千款插件，涵盖调试、主题、代码补全、版本控制等功能。<br>
+热门扩展：Python、Prettier（代码格式化）、GitLens（Git 增强）、Live Server（实时网页预览）等。</li>
+<li>智能代码辅助<br>
+IntelliSense：基于上下文自动补全代码，支持变量、函数名和模块的智能提示。<br>
+语法高亮、代码折叠、错误检查（Linting）等功能提升编码效率。</li>
+<li>集成调试工具<br>
+内置调试器，支持断点、变量监视、调用堆栈跟踪，可直接调试 Node.js、Python、C# 等语言。<br>
+通过扩展支持更多调试场景（如浏览器调试）。</li>
+<li>Git 版本控制集成<br>
+直接可视化操作 Git，支持提交、拉取、推送、分支管理、冲突解决等功能。</li>
+<li>终端与任务运行<br>
+内置终端（支持 PowerShell、CMD、Bash 等），可直接运行脚本或命令。<br>
+可配置任务（Tasks）自动化构建、测试流程。</li>
+<li>高度可定制<br>
+主题和图标包自由更换（如 Material Theme、One Dark Pro）。<br>
+用户设置（JSON 文件）支持键盘快捷键、界面布局、功能开关的个性化配置。</li>
+<li>跨平台协作<br>
+Live Share 功能支持多人实时协作编辑和调试，类似远程结对编程。</li>
+</ul>
+<p><strong>适用场景</strong></p>
+<ul>
+<li>Web 开发：前端（HTML/CSS/JavaScript）、后端（Node.js、Python、PHP）开发。</li>
+<li>脚本与自动化：Python、Shell、PowerShell 等脚本编写。</li>
+<li>数据科学：通过扩展支持 Jupyter Notebook、数据可视化。</li>
+<li>云开发：集成 Azure、Docker、Kubernetes 等工具。</li>
+</ul>
+<h2>2、VS Code的下载安装：</h2>
+<p>访问VS Code官网<a href="https://code.visualstudio.com/Download" rel="nofollow">VS Code官网下载</a></p>
+<p>选择Windows操作系统进行下载。</p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/645fdba3-c363-4063-be75-5ec969cde19c"><img src="https://github.com/user-attachments/assets/645fdba3-c363-4063-be75-5ec969cde19c" alt="Image" style="max-width: 100%;"></a></p>
+<p>下载完成后运行安装程序，安装过程见下图</p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/cb393099-1322-4086-b949-467500982de7"><img src="https://github.com/user-attachments/assets/cb393099-1322-4086-b949-467500982de7" alt="Image" style="max-width: 100%;"></a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/ff795e66-eb54-4631-b0bf-9756fa8395ad"><img src="https://github.com/user-attachments/assets/ff795e66-eb54-4631-b0bf-9756fa8395ad" alt="Image" style="max-width: 100%;"></a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/43e6cfa4-5ef3-4dd4-b451-1f84640b7e9d"><img src="https://github.com/user-attachments/assets/43e6cfa4-5ef3-4dd4-b451-1f84640b7e9d" alt="Image" style="max-width: 100%;"></a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/aaa72e08-9113-4d2f-89ce-8d38cbda356f"><img src="https://github.com/user-attachments/assets/aaa72e08-9113-4d2f-89ce-8d38cbda356f" alt="Image" style="max-width: 100%;"></a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/f73a6145-3028-488a-b7e7-e27dcb86d6c3"><img src="https://github.com/user-attachments/assets/f73a6145-3028-488a-b7e7-e27dcb86d6c3" alt="Image" style="max-width: 100%;"></a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/911d7d11-5e27-4edf-ba4f-2733bdaa1930"><img src="https://github.com/user-attachments/assets/911d7d11-5e27-4edf-ba4f-2733bdaa1930" alt="Image" style="max-width: 100%;"></a></p></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
