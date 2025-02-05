@@ -1,6 +1,6 @@
 `注1：带*为必做，其余为选做`
 `注2：由于笔者在物理机上已经安装过这些，所有操作都是在win10虚拟机上进行的，但并不影响各位在Windows系统的物理机上执行相同操作`
-# *一、下载安装Anaconda：
+# *一、Anaconda的下载安装及使用：
 ## 1、Anaconda介绍：
 Anaconda是一个为AI和数据科学提供支持的平台。它提供经过严格测试和验证的数据和AI模型。通过Anaconda Navigator，用户可以更轻松地访问数据科学工具和资源。
 
@@ -236,7 +236,7 @@ conda activate [base]
 
 ![Image](https://github.com/user-attachments/assets/7edb40d0-6532-4fd8-9a9d-e17fe26a3796)
 
-# *二、下载安装Visual Studio Code：
+# *二、Visual Studio Code的下载安装及使用：
 ## 1、Visual Studio Code介绍：
 Visual Studio Code（简称 VS Code）是由微软开发的一款免费、开源、跨平台的代码编辑器，适用于 Windows、macOS 和 Linux 系统。它结合了轻量级编辑器的灵活性和集成开发环境（IDE）的强大功能，逐渐成为开发者中备受欢迎的工具之一。
 
@@ -352,14 +352,117 @@ print('Hello World!')
 python *.py
 ```
 
-![Image](https://github.com/user-attachments/assets/8318c276-ecb4-475e-b4e8-ca2923723d94)
+![Image](https://github.com/user-attachments/assets/a0026261-8f7b-4c0f-8320-ee7732365a77)
 
 第二种是**直接点击运行**，如下图所示：
 
-<!-- Failed to upload "image.png" -->
+![Image](https://github.com/user-attachments/assets/4bac126d-ba85-4118-a6bc-805de986f3e7)
 
 第三种是“右键运行”（任选其一，有不同的效果，在终端中运行的效果和方法二一致），如下图所示：
 
 ![Image](https://github.com/user-attachments/assets/48bf9b78-ced3-4779-a930-d999263f5c58)
 
 ![Image](https://github.com/user-attachments/assets/abc36577-85ca-4eec-8452-8b35c0f7b2a1)
+
+# 三、Python官方IDLE的下载安装及使用：
+`注：其实Anaconda搭建的虚拟环境中也有IDLE的应用程序，但是没法正常启动，所以如果需要使用IDLE，需要本地再下一个Python`
+## 1、Python官方IDLE介绍：
+IDLE（Integrated Development and Learning Environment）是 Python 官方默认捆绑的轻量级 IDE，适合初学者学习和简单脚本开发。
+另外，**NCRE-2的Python以及各编程比赛Python赛道基本都要求使用官方的IDLE进行编程**，所以熟练掌握IDLE的使用也很有必要。
+
+**主要功能**：
+- 交互式 Shell：
+        类似 Python 命令行，可直接运行代码片段并查看结果。
+- 代码编辑器：
+        支持语法高亮、自动缩进、基础代码补全。
+- 调试功能：
+        提供简单的断点调试工具（但功能有限）。
+- 跨平台：
+        支持 Windows、macOS 和 Linux。
+
+**优点**：
+- 轻量、无需额外安装。
+- 适合新手快速上手 Python 语法。
+
+**缺点**：
+- 功能简陋，缺乏现代 IDE 的智能提示、版本控制集成等。
+- 界面较为老旧，扩展性差。
+## 2、Python官方IDLE的下载安装：
+访问Python官网[Python官网下载——Windows](https://www.python.org/downloads/windows/)
+
+选择稳定版本的**Windows installer (64-bit)**进行下载（笔者这里下载的是3.13.2，一般下载最新的，或者其它稳定大版本如3.7、3.8等的最新版）。
+
+![Image](https://github.com/user-attachments/assets/8de6d1f0-0708-4b87-9e25-934859ddaae1)
+
+**如果觉得浏览器下载得慢可以复制下载链接到迅雷里下载**
+
+下载完成后运行安装程序，安装过程见下图
+
+![Image](https://github.com/user-attachments/assets/5e57c8f5-16fa-455b-85c2-d3aae67fbb37)
+
+![Image](https://github.com/user-attachments/assets/d516a78b-c56f-4d14-a809-27d35cebdea1)
+
+![Image](https://github.com/user-attachments/assets/86566855-09a5-4c4b-9505-39b4da5574d6)
+
+![Image](https://github.com/user-attachments/assets/41ab741e-f933-4462-bbe8-f767e5612c18)
+
+## 3、官方Python命令行的使用：
+- 在没安装Anaconda的情况下，按“Win+R”打开命令行窗口，输入“python”（或输入cmd，再在命令行窗口输入python）即可快速启动官方Python的命令行。
+
+![Image](https://github.com/user-attachments/assets/5ab68c30-e03c-4cbd-8f11-f801b8d52160)
+
+- 在按照前述过程安装了Anaconda的情况下，上述过程启动的是Anaconda的base虚拟环境的python的命令行
+
+![Image](https://github.com/user-attachments/assets/1281e9f9-35eb-4ea0-94a0-f07182e17363)
+
+这时如果我们需要使用官方Python的命令行，就只能在应用菜单中启动（或者修改系统变量，但比较麻烦也没必要）
+
+![Image](https://github.com/user-attachments/assets/6e89ab2d-41a5-4d05-9b13-b05fe413672b)
+
+![Image](https://github.com/user-attachments/assets/c22b11ec-ecdf-4f1a-a9d0-f270cfc7f27b)
+
+## 4、IDLE的使用：
+### （1）运行：
+在桌面没有设置快捷方式的情况下，建议在应用菜单中启动
+
+![Image](https://github.com/user-attachments/assets/944b85c8-525f-4424-9381-42785f9c5ab7)
+
+### （2）IDLE命令行：
+IDLE刚启动的界面是主界面，用法和cmd命令行一样，区别在于IDLE有代码高亮
+
+![Image](https://github.com/user-attachments/assets/61ace788-ff95-4ad2-a6c0-206a859927b2)
+
+### （3）IDLE对.py文件的编写和运行：
+点击菜单栏的“File”→“New File”，会弹出一个空白界面，用于编写.py文件
+
+![Image](https://github.com/user-attachments/assets/ce95a5e3-d151-419a-96a4-e024bfb57faa)
+
+![Image](https://github.com/user-attachments/assets/80c66712-fc12-4696-a366-9c59a1a22c07)
+
+假如我们要编写一个用户输入n，返回计算1+2+……+n的和的程序，代码如下：
+```python
+n = int(input("请输入整数n："))
+sum = 0
+for i in range(1, n + 1):
+    sum += i
+print("1+2+……+n的和为%d"%sum)
+```
+
+![Image](https://github.com/user-attachments/assets/e7e08d45-da68-4cd9-a977-b6d02d07a52b)
+
+编写完之后记得按快捷键“Ctrl+S”保存（或者点击菜单栏的“File”→“Save”）
+
+![Image](https://github.com/user-attachments/assets/f20b89ee-a117-4144-83a7-52410c351816)
+
+首次保存需要选择保存路径并设置文件名
+
+![Image](https://github.com/user-attachments/assets/97a47eec-75ff-4ee4-a0d4-b552d64866f4)
+
+保存之后再运行（**如果没保存就运行，运行的是上一次保存的代码**）
+运行需要按快捷键“F5”（或者点击菜单栏的“Run”→“Run Module”）
+
+![Image](https://github.com/user-attachments/assets/be890b6c-783d-4d4a-9a43-8b6465f8243c)
+
+![Image](https://github.com/user-attachments/assets/7788995f-c6d1-4635-80b1-d1580226901f)
+
+# 四、PyCharm的下载安装及使用：
