@@ -284,8 +284,82 @@ Visual Studio Code（简称 VS Code）是由微软开发的一款免费、开源
 
 ![Image](https://github.com/user-attachments/assets/43e6cfa4-5ef3-4dd4-b451-1f84640b7e9d)
 
-![Image](https://github.com/user-attachments/assets/aaa72e08-9113-4d2f-89ce-8d38cbda356f)
-
 ![Image](https://github.com/user-attachments/assets/f73a6145-3028-488a-b7e7-e27dcb86d6c3)
 
 ![Image](https://github.com/user-attachments/assets/911d7d11-5e27-4edf-ba4f-2733bdaa1930)
+
+![Image](https://github.com/user-attachments/assets/a6028658-0479-4f39-8f2b-1136252da537)
+
+## 3、VS Code的配置：
+### （1）中文设置：
+如下图所示操作
+![Image](https://github.com/user-attachments/assets/c7475514-caf7-428e-ae1e-7fb2a628f6bd)
+
+![Image](https://github.com/user-attachments/assets/63368200-448e-4008-97af-fd95630baf97)
+重启后即为中文界面
+
+![Image](https://github.com/user-attachments/assets/a5115d59-0f75-4ede-b9f2-981fdf94a0ab)
+
+### （2）自动保存设置：
+打开设置界面
+![Image](https://github.com/user-attachments/assets/3ec71acb-c793-4a19-8089-39a64f519f79)
+将自动保存设置为“**onFucusChange（当VS Code失去鼠标焦点时）**”
+
+![Image](https://github.com/user-attachments/assets/eeec895e-d17c-4284-9979-28c3a785d80f)
+
+![Image](https://github.com/user-attachments/assets/57c664ea-eb96-4b8b-943d-659e75fce904)
+
+### （3）Python插件安装：
+
+![Image](https://github.com/user-attachments/assets/42bc94b5-4e6b-4d79-b0ec-1a75cd12793a)
+
+安装完成后需要重启VS Code
+### （4）Python解释器设置：
+在命令栏中输入
+```
+>Python:Select Interpreter
+```
+
+![Image](https://github.com/user-attachments/assets/82739a66-1505-4389-9bd5-80ed8e6ad626)
+
+![Image](https://github.com/user-attachments/assets/7353a097-23e9-4169-8cc9-5dc1af214a30)
+
+## 4、使用VS Code运行Python程序：
+### （1）编写.py文件：
+先新建一个文件夹，并打开
+![Image](https://github.com/user-attachments/assets/60ab37a6-99ee-47af-8fc2-d89eb70b311c)
+
+![Image](https://github.com/user-attachments/assets/df94d94d-44a5-40da-9832-b2f021f65c18)
+
+再新建一个.py文件
+![Image](https://github.com/user-attachments/assets/a8377fe3-f815-4e54-8e15-e8cf91961eb7)
+
+输入以下代码
+```python
+print('Hello World!')
+```
+
+![Image](https://github.com/user-attachments/assets/a5d524ac-6217-4a1d-a917-f11be260d1c9)
+
+## （2）运行.py文件
+有三种运行方法
+一种是**在终端中输入命令**运行，如图所示打开终端，并输入以下命令（**这种方法需要注意命令执行的路径**）：
+
+![Image](https://github.com/user-attachments/assets/28532d0e-668d-4104-80c7-f150dcc19e9c)
+
+```
+# *指自己创建的.py文件名，笔者这里为test
+python *.py
+```
+
+![Image](https://github.com/user-attachments/assets/8318c276-ecb4-475e-b4e8-ca2923723d94)
+
+第二种是**直接点击运行**，如下图所示：
+
+<!-- Failed to upload "image.png" -->
+
+第三种是“右键运行”（任选其一，有不同的效果，在终端中运行的效果和方法二一致），如下图所示：
+
+![Image](https://github.com/user-attachments/assets/48bf9b78-ced3-4779-a930-d999263f5c58)
+
+![Image](https://github.com/user-attachments/assets/abc36577-85ca-4eec-8452-8b35c0f7b2a1)
