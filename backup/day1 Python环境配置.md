@@ -162,6 +162,10 @@ conda -h
 ![Image](https://github.com/user-attachments/assets/dd6f5420-2dd6-4bb7-b23f-8843d9dda721)
 
 以下列出几个最常用的
+- 查看当前安装的conda的信息
+```
+conda info
+```
 - 查看conda版本
 ```
 conda --version
@@ -184,9 +188,9 @@ conda create -n 虚拟环境名 python=Python版本
 - 删除虚拟环境
 ```
 # 删除指定虚拟环境及其中所有安装的包
-conda remove --name 虚拟环境名 --all
+conda remove -n 虚拟环境名 --all
 # 删除指定虚拟环境中指定的包
-conda remove --name 虚拟环境名 包名
+conda remove -n 虚拟环境名 包名
 ```
 - 查看有哪些虚拟环境
 以下三条命令都可以
@@ -199,7 +203,7 @@ conda info --envs
 ```
 conda activate 虚拟环境名
 ```
-- 退出虚拟环境
+- 退出虚拟环境（返回上一级虚拟环境）
 ```
 conda deactivate
 ```
