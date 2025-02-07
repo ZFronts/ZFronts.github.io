@@ -169,6 +169,7 @@ conda info
 - 查看conda版本
 ```
 conda --version
+conda -V
 ```
 - 更新conda
 ```
@@ -177,10 +178,12 @@ conda update conda
 - 查询某个命令的帮助
 ```
 conda 具体命令 --help
+conda 具体命令 -h
 ```
 - 创建虚拟环境
 ```
 conda create -n 虚拟环境名 python=Python版本
+conda create --name 虚拟环境名 python=Python版本
 ```
 这表示创建python版本为3.8、名字为env_name的虚拟环境。
 
@@ -189,8 +192,10 @@ conda create -n 虚拟环境名 python=Python版本
 ```
 # 删除指定虚拟环境及其中所有安装的包
 conda remove -n 虚拟环境名 --all
-# 删除指定虚拟环境中指定的包
-conda remove -n 虚拟环境名 包名
+conda remove --name 虚拟环境名 --all
+# 删除指定虚拟环境中指定的包（可指定多个，中间用空格分隔）
+conda remove -n 虚拟环境名 包名s
+conda remove --name 虚拟环境名 包名s
 ```
 - 查看有哪些虚拟环境
 以下三条命令都可以
@@ -220,9 +225,9 @@ conda install 包名=版本号
 # 将某个包更新到它的最新版本
 conda update 包名
 ```
-- 包的卸载
+- 包的卸载（可指定多个，中间用空格分隔）
 ```
-conda uninstall 包名
+conda uninstall 包名s
 ```
 ## 7、使用：
 **按照上述流程配置好的Anaconda在cmd命令行窗口时是不会自动激活使用的**（Win11自带的wt终端会自动激活使用）

@@ -220,6 +220,7 @@ conda config --set show_channel_urls yes
 <li>查看conda版本</li>
 </ul>
 <pre class="notranslate"><code class="notranslate">conda --version
+conda -V
 </code></pre>
 <ul>
 <li>更新conda</li>
@@ -230,11 +231,13 @@ conda config --set show_channel_urls yes
 <li>查询某个命令的帮助</li>
 </ul>
 <pre class="notranslate"><code class="notranslate">conda 具体命令 --help
+conda 具体命令 -h
 </code></pre>
 <ul>
 <li>创建虚拟环境</li>
 </ul>
 <pre class="notranslate"><code class="notranslate">conda create -n 虚拟环境名 python=Python版本
+conda create --name 虚拟环境名 python=Python版本
 </code></pre>
 <p>这表示创建python版本为3.8、名字为env_name的虚拟环境。</p>
 <p>创建后，env_name文件可以在Anaconda安装目录envs文件下找到。在不指定python版本时，自动创建基于最新python版本的虚拟环境</p>
@@ -243,8 +246,10 @@ conda config --set show_channel_urls yes
 </ul>
 <pre class="notranslate"><code class="notranslate"># 删除指定虚拟环境及其中所有安装的包
 conda remove -n 虚拟环境名 --all
-# 删除指定虚拟环境中指定的包
-conda remove -n 虚拟环境名 包名
+conda remove --name 虚拟环境名 --all
+# 删除指定虚拟环境中指定的包（可指定多个，中间用空格分隔）
+conda remove -n 虚拟环境名 包名s
+conda remove --name 虚拟环境名 包名s
 </code></pre>
 <ul>
 <li>查看有哪些虚拟环境<br>
@@ -280,9 +285,9 @@ conda install 包名=版本号
 conda update 包名
 </code></pre>
 <ul>
-<li>包的卸载</li>
+<li>包的卸载（可指定多个，中间用空格分隔）</li>
 </ul>
-<pre class="notranslate"><code class="notranslate">conda uninstall 包名
+<pre class="notranslate"><code class="notranslate">conda uninstall 包名s
 </code></pre>
 <h2>7、使用：</h2>
 <p><strong>按照上述流程配置好的Anaconda在cmd命令行窗口时是不会自动激活使用的</strong>（Win11自带的wt终端会自动激活使用）<br>
