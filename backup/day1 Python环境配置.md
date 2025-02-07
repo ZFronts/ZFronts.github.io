@@ -339,9 +339,9 @@ Visual Studio Code（简称 VS Code）是由微软开发的一款免费、开源
 ## 4、使用VS Code运行Python程序：
 ### （1）编写.py文件：
 先新建一个文件夹，并打开
-![Image](https://github.com/user-attachments/assets/60ab37a6-99ee-47af-8fc2-d89eb70b311c)
-
 ![Image](https://github.com/user-attachments/assets/df94d94d-44a5-40da-9832-b2f021f65c18)
+
+![Image](https://github.com/user-attachments/assets/60ab37a6-99ee-47af-8fc2-d89eb70b311c)
 
 再新建一个.py文件
 ![Image](https://github.com/user-attachments/assets/a8377fe3-f815-4e54-8e15-e8cf91961eb7)
