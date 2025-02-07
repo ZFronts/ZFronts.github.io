@@ -442,7 +442,7 @@ IDLE刚启动的界面是主界面，用法和cmd命令行一样，区别在于I
 
 ![Image](https://github.com/user-attachments/assets/61ace788-ff95-4ad2-a6c0-206a859927b2)
 
-### （3）IDLE对.py文件的编写和运行：
+### （3）IDLE对.py文件的编写和运行（脚本运行）：
 点击菜单栏的“File”→“New File”，会弹出一个空白界面，用于编写.py文件
 
 ![Image](https://github.com/user-attachments/assets/ce95a5e3-d151-419a-96a4-e024bfb57faa)
