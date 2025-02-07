@@ -303,9 +303,11 @@ Visual Studio Code（简称 VS Code）是由微软开发的一款免费、开源
 ## 3、VS Code的配置：
 ### （1）中文设置：
 如下图所示操作
-![Image](https://github.com/user-attachments/assets/c7475514-caf7-428e-ae1e-7fb2a628f6bd)
 
 ![Image](https://github.com/user-attachments/assets/63368200-448e-4008-97af-fd95630baf97)
+
+![Image](https://github.com/user-attachments/assets/c7475514-caf7-428e-ae1e-7fb2a628f6bd)
+
 重启后即为中文界面
 
 ![Image](https://github.com/user-attachments/assets/a5115d59-0f75-4ede-b9f2-981fdf94a0ab)
