@@ -157,6 +157,7 @@ conda config --set show_channel_urls yes
 基本上都可以在cmd命令行窗口中使用以下指令查询conda命令用法
 ```
 conda -h
+conda --help
 ```
 
 ![Image](https://github.com/user-attachments/assets/dd6f5420-2dd6-4bb7-b23f-8843d9dda721)
