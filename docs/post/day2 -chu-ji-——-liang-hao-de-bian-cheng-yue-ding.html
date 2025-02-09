@@ -383,7 +383,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <li>短选项参数如果需要参数，<ins>如果其后还有非空格字符</ins>，会<strong>默认将其后一个非空格字符至下一个空格之间的字符串作为它的参数</strong>；<code class="notranslate">eg.假设-u需要参数，-h和--help不需要，那么-u --help -h和-u--help -h的-u的参数都是--help</code></li>
 <li>选项在列表中出现的顺序与它们被发现的顺序相同，因此<strong>允许出现多次</strong>；</li>
 <li>如果发现了非选项参数，<strong>其后的所有参数都将被视为非选项参数</strong>；</li>
-<li>需要参数的长选项参数在命令中可以输入“=”来指定参数值；<code class="notranslate">eg.假设--user需要参数，那么--user=ming和--user ming的---user的参数都是ming</code></li>
+<li>需要参数的长选项参数在命令中可以输入“=”来指定参数值；<code class="notranslate">eg.假设--user需要参数，那么--user=ming和--user ming的--user的参数都是ming</code></li>
 <li>长选项和短选项<strong>可以混合使用</strong>；</li>
 </ul>
 </li>
