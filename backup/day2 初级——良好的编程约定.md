@@ -199,6 +199,7 @@ Python中<ins>**一切皆对象**</ins>，所有对象<ins>**都有一个布尔�
       - <ins>**创建一个新类**</ins>。name是一个字符串，代表<ins>**新类的名称**</ins>；base是一个元组，代表<ins>**新类的基类**</ins>，如果为空元组，则代表<ins>**基类为object**</ins>；dict是一个字典，包含<ins>**类主体属性和方法的定义**</ins>；
 - 值：标识对象所存储的<ins>**具体数据**</ins>，使用print()函数可以将值进行打印输出；
 # 九、Python命令行参数：
+参考[菜鸟教程——Python3 命令行参数](https://www.runoob.com/python3/python3-command-line-arguments.html)
 ## 1、命令行参数：
 使用命令行运行.py文件时，python后面的各字符（以空格分隔）均为命令行参数；
 ```python
