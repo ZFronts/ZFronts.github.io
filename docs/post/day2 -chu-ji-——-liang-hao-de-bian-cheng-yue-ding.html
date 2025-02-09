@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html data-color-mode="light" data-dark-theme="dark" data-light-theme="light" lang="zh-CN">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
+    
+    <link rel="icon" href="https://github.githubassets.com/favicons/favicon.svg"><script>
+        let theme = localStorage.getItem("meek_theme") || "light";
+        document.documentElement.setAttribute("data-color-mode", theme);
+    </script>
+<meta name="description" content="`部分内容基于菜鸟教程的《基础语法》（（数字(Number)类型之前+同一行显示多条语句其余部分后面几天会涉及）、《注释》和《`[Python3 命令行参数](https://www.runoob.com/python3/python3-command-line-arguments.html)`》部分，同时拓展了一些点`
+# 一、编码格式：
+## 1、python中常见的编码格式：
+- 内存编码：python解释器使用<ins>**Unicode编码**</ins>作为内存编码，简称<ins>**内码**</ins>；
+- 外存编码：在Python中，保存文件时可以使用不同的编码方式。">
+<meta property="og:title" content="day2 初级——良好的编程约定">
+<meta property="og:description" content="`部分内容基于菜鸟教程的《基础语法》（（数字(Number)类型之前+同一行显示多条语句其余部分后面几天会涉及）、《注释》和《`[Python3 命令行参数](https://www.runoob.com/python3/python3-command-line-arguments.html)`》部分，同时拓展了一些点`
+# 一、编码格式：
+## 1、python中常见的编码格式：
+- 内存编码：python解释器使用<ins>**Unicode编码**</ins>作为内存编码，简称<ins>**内码**</ins>；
+- 外存编码：在Python中，保存文件时可以使用不同的编码方式。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://ZFronts.github.io/post/day2%20-chu-ji-%E2%80%94%E2%80%94-liang-hao-de-bian-cheng-yue-ding.html">
+<meta property="og:image" content="https://github.githubassets.com/favicons/favicon.svg">
+<title>day2 初级——良好的编程约定</title>
+<link href="//unpkg.com/@wooorm/starry-night@2.1.1/style/both.css" rel="stylesheet" />
+
+
+</head>
+<style>
+body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;padding: 45px;font-size: 16px;font-family: sans-serif;line-height: 1.25;}
+#header{display:flex;padding-bottom:8px;border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted));margin-bottom: 16px;}
+#footer {margin-top:64px; text-align: center;font-size: small;}
+
+</style>
+
+<style>
+.postTitle{margin: auto 0;font-size:40px;font-weight:bold;}
+.title-right{display:flex;margin:auto 0 0 auto;}
+.title-right .circle{padding: 14px 16px;margin-right:8px;}
+#postBody{border-bottom: 1px solid var(--color-border-default);padding-bottom:36px;}
+#postBody hr{height:2px;}
+#cmButton{height:48px;margin-top:48px;}
+#comments{margin-top:64px;}
+.g-emoji{font-size:24px;}
+@media (max-width: 600px) {
+    body {padding: 8px;}
+    .postTitle{font-size:24px;}
+}
+.copy-feedback {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    color: var(--color-fg-on-emphasis);
+    background-color: var(--color-fg-muted);
+    border-radius: 3px;
+    padding: 5px 8px;
+    font-size: 12px;
+}
+</style>
+
+
+
+
+<body>
+    <div id="header">
+<h1 class="postTitle">day2 初级——良好的编程约定</h1>
+<div class="title-right">
+    <a href="https://ZFronts.github.io" id="buttonHome" class="btn btn-invisible circle" title="首页">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathHome" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+    <a href="https://github.com/ZFronts/ZFronts.github.io/issues/4" target="_blank" class="btn btn-invisible circle" title="Issue">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathIssue" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+
+    <a class="btn btn-invisible circle" onclick="modeSwitch();" title="切换主题">
+        <svg class="octicon" width="16" height="16" >
+            <path id="themeSwitch" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+
+</div>
+</div>
+    <div id="content">
+<div class="markdown-body" id="postBody"><p><code class="notranslate">部分内容基于菜鸟教程的《基础语法》（（数字(Number)类型之前+同一行显示多条语句其余部分后面几天会涉及）、《注释》和《</code><a href="https://www.runoob.com/python3/python3-command-line-arguments.html" rel="nofollow">Python3 命令行参数</a><code class="notranslate">》部分，同时拓展了一些点</code></p>
+<h1>一、编码格式：</h1>
+<h2>1、python中常见的编码格式：</h2>
+<ul>
+<li>内存编码：python解释器使用<ins><strong>Unicode编码</strong></ins>作为内存编码，简称<ins><strong>内码</strong></ins>；</li>
+<li>外存编码：在Python中，保存文件时可以使用不同的编码方式。<ins>默认情况下，Python使用<strong>UTF-8编码</strong>来保存文件</ins>；</li>
+</ul>
+<h2>2、python编码声明注释：</h2>
+<ul>
+<li>作用：在文件<ins><strong>开头</strong></ins>加上编码声明注释，用以<ins><strong>指定源码文件中的编码格式</strong></ins>；</li>
+<li>语法：有以下三种形式</li>
+</ul>
+<div class="highlight highlight-source-python"><pre class="notranslate"><span class="pl-c">#encoding=字符编码名</span>
+<span class="pl-c">#coding:字符编码名</span>
+<span class="pl-c">#-*- coding:字符编码名 -*-</span>
+
+<span class="pl-c">#例如规定.py文件使用ascii编码的代码如下：</span>
+<span class="pl-c">#encoding=ascii</span>
+<span class="pl-c">#coding:ascii</span>
+<span class="pl-c">#-*- coding: ascii -*-</span></pre></div>
+<h1>二、命名约定及规范——标识符：</h1>
+<h2>1、标识符的定义：</h2>
+<p>在Python语言中用于<ins><strong>规范命名解释器能识别的可执行代码对象的名称</strong></ins>；</p>
+<h2>2、标识符的分类：</h2>
+<ul>
+<li>变量名</li>
+<li>关键字</li>
+<li>函数名</li>
+<li>运算符</li>
+<li>类名</li>
+</ul>
+<p><strong>注：完整的标识符还包括格式控制符、#等</strong></p>
+<h2>3、命名约定：</h2>
+<ul>
+<li>标识符只能由<ins><strong>字母</strong></ins>、<ins><strong>数字</strong></ins>、<ins><strong>下划线</strong></ins>、<ins><strong>中文</strong></ins>组成，且<ins><strong>命名时数字不能被放在名称首位</strong></ins>，虽然中文可以命名标识符，但是日常编程中更多还是用英文字母命名标识符；</li>
+<li>Python语言<ins><strong>大小写敏感</strong></ins>，如a=0和A=0是两个变量；</li>
+<li><strong>自定义</strong>标识符<ins><strong>不能是Python保留关键字</strong></ins></li>
+<li>以下划线开头的标识符有特殊意义：
+<ul>
+<li>单下划线开头（如_food）：代表<ins><strong>不能直接访问</strong>的类属性</ins>，需通过<ins>类提供的接口</ins>进行访问；</li>
+<li>双下划线开头（如__food）：代表<ins>类的<strong>私有成员</strong></ins>；</li>
+<li>双下划綫开头和结尾（如__food__）：代表Python中<ins><strong>特殊方法专用的标识</strong></ins>，如__init__()代表<ins>类的<strong>构造函数</strong></ins>；</li>
+</ul>
+</li>
+</ul>
+<h2>4、命名规范：</h2>
+<ul>
+<li>解释器能识别；</li>
+<li>有利于程序员阅读；</li>
+<li>下划线命名法：
+<ul>
+<li>采用<ins><strong>英文小写单词</strong></ins>，<ins>多单词组合</ins>时采用<ins><strong>中间加下划线</strong></ins>的方法来标识；</li>
+<li>例如apple_tree、user_name</li>
+</ul>
+</li>
+<li>驼峰命名法：
+<ul>
+<li>小驼峰：
+<ul>
+<li>要求<ins>除第一个单词之外</ins>，<ins><strong>其他单词首字母大写</strong></ins></li>
+<li>例如appleTree、userName</li>
+</ul>
+</li>
+<li>大驼峰（帕斯卡命名法）：
+<ul>
+<li>要求<ins><strong>每个单词首字母大写</strong></ins>，<ins><strong>其他字母小写</strong></ins>；</li>
+<li>例如AppleTree、UserName</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>匈牙利命名法：
+<ul>
+<li>常用于C++类成员变量的命名（笔者）</li>
+<li>基本原则：<strong>变量名=属性+类型+对象描述</strong></li>
+<li>举例（参考博客：<a href="https://blog.csdn.net/weixin_55076626/article/details/121795671" rel="nofollow">四种常用的命名规则：帕斯卡命名法、驼峰命名法、下划线命名法、匈牙利命名法</a>）<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/338828fc-fbe9-4400-a2c3-dfc8081cd355"><img src="https://github.com/user-attachments/assets/338828fc-fbe9-4400-a2c3-dfc8081cd355" alt="Image" style="max-width: 100%;"></a></li>
+</ul>
+</li>
+</ul>
+<h1>三、数据与数制：</h1>
+<h2>1、数据：</h2>
+<p>在Python语言中<ins>除了标识符外</ins>，剩余的对象都可以叫做<ins><strong>数据</strong></ins>；</p>
+<h2>2、程序代码组成：</h2>
+<ul>
+<li>标识符（可执行命令）</li>
+<li>数据</li>
+</ul>
+<h2>3、Python中的数制：</h2>
+<ul>
+<li>十进制：Python中的<ins><strong>纯数字默认表示十进制</strong></ins>；</li>
+<li>二进制：
+<ul>
+<li>拥有<ins><strong>前导字符0b(B)</strong></ins>的数字表示二进制；</li>
+<li>eg.0b11表示二进制数11，十进制数3；</li>
+</ul>
+</li>
+<li>八进制：
+<ul>
+<li>拥有<ins><strong>前导字符0o(O)</strong></ins>的数字表示八进制；</li>
+<li>eg.0o11表示八进制数11，十进制数9；</li>
+</ul>
+</li>
+<li>十六进制：
+<ul>
+<li>拥有<ins><strong>前导字符0x(X)</strong></ins>的数字表示十六进制；</li>
+<li>eg.0x11表示十六进制数11，十进制数17；</li>
+</ul>
+</li>
+</ul>
+<h1>四、基本代码格式：</h1>
+<h2>1、单行单语句：</h2>
+<p>顾名思义</p>
+<h2>2、单行多语句：</h2>
+<p>在同一行中使用多条语句，语句之间使用“分号;”分割，举例如下：</p>
+<div class="highlight highlight-source-python"><pre class="notranslate"><span class="pl-k">import</span> <span class="pl-s1">math</span>;<span class="pl-en">print</span>(<span class="pl-s1">math</span>.<span class="pl-c1">pi</span>);<span class="pl-en">print</span>(<span class="pl-s1">math</span>.<span class="pl-c1">e</span>)</pre></div>
+<h2>3、多行语句：</h2>
+<ul>
+<li>利用反斜杠“\”：</li>
+</ul>
+<div class="highlight highlight-source-python"><pre class="notranslate">(<span class="pl-s1">语句第一部分</span>)\
+(<span class="pl-s1">语句第二部分</span>)\
+……
+(<span class="pl-s1">语句第n部分</span>)
+
+<span class="pl-c">#举例</span>
+<span class="pl-s1">n</span> <span class="pl-c1">=</span> <span class="pl-c1">1</span> <span class="pl-c1">+</span>\
+    <span class="pl-c1">2</span> <span class="pl-c1">-</span> \
+    <span class="pl-c1">1</span> <span class="pl-c1">*</span> <span class="pl-c1">4</span>\
+    <span class="pl-c1">/</span> <span class="pl-c1">5</span>
+<span class="pl-en">print</span>(<span class="pl-s1">n</span>)</pre></div>
+<ul>
+<li>利用括号（小括号()、中括号[]、大括号{}）：</li>
+</ul>
+<pre class="notranslate"><code class="notranslate">#以“[]”为例
+[(语句第一部分),
+ (语句第二部分),
+……,
+(语句第n部分)]
+</code></pre>
+<h2>4、多行缩进格式（一次缩进格式为<strong>四个字符</strong>）：</h2>
+<ul>
+<li>Python采用<ins><strong>严格的缩进格式</strong></ins>以<ins><strong>区分不同子代码块的执行</strong></ins>；</li>
+<li>种类：（属于同一母代码块的子代码块需<strong>统一缩进种类</strong>）
+<ul>
+<li>Tab键缩进；</li>
+<li>空格缩进；</li>
+</ul>
+</li>
+<li>缩进可能导致的问题：
+<ul>
+<li>缩进错误：由缩进种类不一致或缩进字符数量出错导致；</li>
+<li>逻辑错误：由子代码块对应错误的父代码块导致；</li>
+</ul>
+</li>
+</ul>
+<div class="highlight highlight-source-python"><pre class="notranslate"><span class="pl-c"># 情况1——输出3*3的“*”号矩阵：</span>
+<span class="pl-en">print</span>(<span class="pl-s">"情况1："</span>)
+<span class="pl-k">for</span> <span class="pl-s1">i</span> <span class="pl-c1">in</span> <span class="pl-en">range</span>(<span class="pl-c1">3</span>):
+    <span class="pl-k">for</span> <span class="pl-s1">j</span> <span class="pl-c1">in</span> <span class="pl-en">range</span>(<span class="pl-c1">3</span>):
+        <span class="pl-en">print</span>(<span class="pl-s">"*"</span>, <span class="pl-s1">end</span><span class="pl-c1">=</span><span class="pl-s">''</span>)
+    <span class="pl-en">print</span>()
+
+<span class="pl-c"># 情况2——输出9行“*”：</span>
+<span class="pl-en">print</span>(<span class="pl-s">"情况2："</span>)
+<span class="pl-k">for</span> <span class="pl-s1">i</span> <span class="pl-c1">in</span> <span class="pl-en">range</span>(<span class="pl-c1">3</span>):
+    <span class="pl-k">for</span> <span class="pl-s1">j</span> <span class="pl-c1">in</span> <span class="pl-en">range</span>(<span class="pl-c1">3</span>):
+        <span class="pl-en">print</span>(<span class="pl-s">"*"</span>, <span class="pl-s1">end</span><span class="pl-c1">=</span><span class="pl-s">''</span>)
+        <span class="pl-en">print</span>()</pre></div>
+<p>输出结果如下：</p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/676f8dfb-aa66-4fcf-91ac-114b018fc2fb"><img src="https://github.com/user-attachments/assets/676f8dfb-aa66-4fcf-91ac-114b018fc2fb" alt="Image" style="max-width: 100%;"></a></p>
+<h1>五、Python保留关键字：</h1>
+<h2>1、定义：Python语言<ins><strong>本身专用的标识符</strong></ins>称为<ins><strong>保留关键字</strong></ins>；</h2>
+<h2>2、保留关键字表：</h2>
+<p><code class="notranslate">勘误——序号23应为lambda</code><br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/6bce034d-666c-4085-8c69-3be2f0a77761"><img src="https://github.com/user-attachments/assets/6bce034d-666c-4085-8c69-3be2f0a77761" alt="Image" style="max-width: 100%;"></a></p>
+<h2>3、查询关键字表的语法：</h2>
+<div class="highlight highlight-source-python"><pre class="notranslate"><span class="pl-k">import</span>  <span class="pl-s1">keyword</span>
+<span class="pl-en">print</span> (<span class="pl-s1">keyword</span>.<span class="pl-c1">kwlist</span>)</pre></div>
+<h1>六、注释：</h1>
+<h2>1、定义：</h2>
+<p>程序代码中<ins><strong>解释器不解释运行的内容</strong></ins>称为<ins><strong>注释</strong></ins>；</p>
+<h2>2、分类：</h2>
+<ul>
+<li>单行注释：以<ins><strong>“#”开头</strong></ins>，直到<ins><strong>换行结束</strong></ins>；</li>
+<li>多行注释：<ins><strong>纯三引号</strong></ins>之间的内容；</li>
+</ul>
+<div class="highlight highlight-source-python"><pre class="notranslate"><span class="pl-c">#这是一个单行注释</span>
+
+<span class="pl-s">'''这是一个</span>
+<span class="pl-s">由三对单引号构成的</span>
+<span class="pl-s">多行注释'''</span>
+
+<span class="pl-s">"""这是一个</span>
+<span class="pl-s">由三对双引号构成的</span>
+<span class="pl-s">多行注释"""</span></pre></div>
+<ul>
+<li>注意：多行注释<strong>不能嵌套使用</strong>，<strong>嵌套多行注释会导致语法错误</strong>。当你开始一个多行注释块时，Python 会一直将后续的行都当作注释，直到遇到另一组三个单引号或三个双引号。</li>
+</ul>
+<h1>七、对象相关：</h1>
+<h2>1、概述：</h2>
+<p>Python中<ins><strong>一切皆对象</strong></ins>，所有对象<ins><strong>都有一个布尔值</strong></ins>；</p>
+<h2>2、获取对象的布尔值——内置函数bool()：</h2>
+<ul>
+<li>函数原型：<code class="notranslate">bool(x)-&gt;bool</code></li>
+<li>解释：如果对象x为<ins><strong>真</strong></ins>，则<ins><strong>返回True</strong></ins>；否则<ins><strong>返回False</strong></ins>；（不传参也返回False）</li>
+</ul>
+<h2>3、布尔值为False的对象：</h2>
+<ul>
+<li>False</li>
+<li>数值0</li>
+<li>空类型（None）</li>
+<li>空字符串（“”、str()）</li>
+<li>空列表（[]、list()）</li>
+<li>空元组（()，tuple()）</li>
+<li>空字典（{}、dict()）</li>
+<li>空集合（set()）</li>
+<li>……</li>
+</ul>
+<h1>八、变量相关：</h1>
+<h2>1、变量：</h2>
+<p>变量相当于内存中一个带标签的盒子；</p>
+<h2>2、变量的定义：</h2>
+<div class="highlight highlight-source-python"><pre class="notranslate"><span class="pl-s1">变量名</span> <span class="pl-c1">=</span> <span class="pl-s1">值</span></pre></div>
+<h2>3、变量的组成：</h2>
+<ul>
+<li>标识：
+<ul>
+<li>定义：为对象所存储的<ins><strong>内存地址</strong></ins>；</li>
+<li>获取——内置函数id()：
+<ul>
+<li>函数原型：<code class="notranslate">id(obj, /)-&gt;the obj's id</code></li>
+<li>解释：返回对象obj的<ins><strong>内存地址</strong></ins></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>类型：
+<ul>
+<li>定义：类型表示的是对象的<ins><strong>数据类型</strong></ins>；</li>
+<li>获取——内置函数type()：
+<ul>
+<li>函数原型：
+<ul>
+<li><code class="notranslate">type(object)-&gt;the object's type</code></li>
+<li><code class="notranslate">type(name, bases, dict, **kwds)-&gt;a new type</code></li>
+</ul>
+</li>
+<li>解释：
+<ul>
+<li><ins><strong>返回</strong></ins>对象object的<ins><strong>数据类型</strong></ins>；</li>
+<li><ins><strong>创建一个新类</strong></ins>。name是一个字符串，代表<ins><strong>新类的名称</strong></ins>；base是一个元组，代表<ins><strong>新类的基类</strong></ins>，如果为空元组，则代表<ins><strong>基类为object</strong></ins>；dict是一个字典，包含<ins><strong>类主体属性和方法的定义</strong></ins>；</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>值：标识对象所存储的<ins><strong>具体数据</strong></ins>，使用print()函数可以将值进行打印输出；</li>
+</ul>
+<h1>九、Python命令行参数：</h1>
+<h2>1、命令行参数：</h2>
+<p>使用命令行运行.py文件时，python后面的各字符（以空格分隔）均为命令行参数；</p>
+<div class="highlight highlight-source-python"><pre class="notranslate"><span class="pl-s1">python</span> <span class="pl-s1">test</span>.<span class="pl-c1">py</span> <span class="pl-s1">arg1</span> <span class="pl-s1">arg2</span> <span class="pl-s1">arg3</span>
+<span class="pl-s1">的命令行参数有test</span>.<span class="pl-c1">py</span>、<span class="pl-s1">arg1</span>、<span class="pl-s1">arg2</span>、<span class="pl-s1">arg3</span></pre></div>
+<h2>2、利用sys模块获取命令行参数：</h2>
+<ul>
+<li>获取命令行参数列表：<code class="notranslate">sys.argv</code></li>
+<li>获取命令行参数个数：<code class="notranslate">len(sys.argv)</code></li>
+<li>获取脚本名：<code class="notranslate">sys.argv[0]</code></li>
+</ul>
+<h2>3、利用getopt模块来获取命令行参数：</h2>
+<ul>
+<li>getopt.getopt()函数：
+<ul>
+<li>函数原型：<code class="notranslate">getopt.getopt(args, shortopts, longopts=[])-&gt;opts, args</code></li>
+<li>参数说明：
+<ul>
+<li>args：是<ins><strong>要解析的参数列表</strong></ins>，<ins><strong>不包括指向正在运行的程序的第一个元素</strong></ins>。通常，这意味着<ins><strong>使用 "sys.argv[1:]"</strong></ins>；</li>
+<li>shortopts：是脚本<ins><strong>想要识别的选项单个字母组成的字符串</strong></ins>，<ins>需要参数的选项<strong>后面跟着一个冒号:</strong></ins>；</li>
+<li>longopts：如果<strong>指定</strong>了longopts，它是一个<ins><strong>包含应支持的长选项名称的字符串列表</strong></ins>。选项名称中<strong>不应包含前导的--字符</strong>。<ins><strong>需要参数的选项后面应跟一个等号=</strong></ins>；</li>
+</ul>
+</li>
+<li>返回值：
+<ul>
+<li>opts：是<ins><strong>一个(opt, value)的列表</strong></ins>。返回的每个(opt, value)对中，选项是第一个元素，前面有连字符（例如，-x，--name），选项参数是第二个元素，如果<strong>选项没有参数</strong>，则为<strong>空字符串</strong>；</li>
+<li>args： 参数列表，<ins><strong>包含那些没有 - 或 -- 的参数</strong></ins>；</li>
+<li>注意：
+<ul>
+<li>短选项参数如果需要参数，<ins>如果其后还有非空格字符</ins>，会<strong>默认将其后一个非空格字符至下一个空格之间的字符串作为它的参数</strong>；<code class="notranslate">eg.假设-u需要参数，-h和--help不需要，那么-u --help -h和-u--help -h的-u的参数都是--help</code></li>
+<li>选项在列表中出现的顺序与它们被发现的顺序相同，因此<strong>允许出现多次</strong>；</li>
+<li>如果发现了非选项参数，<strong>其后的所有参数都将被视为非选项参数</strong>；</li>
+<li>需要参数的长选项参数在命令中可以输入“=”来指定参数值；<code class="notranslate">eg.假设--user需要参数，那么--user=ming和--user ming的---user的参数都是ming</code></li>
+<li>长选项和短选项<strong>可以混合使用</strong>；</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="highlight highlight-source-python"><pre class="notranslate"><span class="pl-k">import</span> <span class="pl-s1">getopt</span>
+<span class="pl-k">import</span> <span class="pl-s1">sys</span>
+
+<span class="pl-en">print</span>(<span class="pl-s1">getopt</span>.<span class="pl-c1">getopt</span>(<span class="pl-s1">sys</span>.<span class="pl-c1">argv</span>[<span class="pl-c1">1</span>:],<span class="pl-s">'n:u:'</span>,[<span class="pl-s">'name'</span>,<span class="pl-s">'user='</span>]))
+
+<span class="pl-c"># 命令行为python main.py -u 1 -n 2 -u 3 --name --user 4 a b的输出为</span>
+<span class="pl-c"># ([('-u', '1'), ('-n', '2'), ('-u', '3'), ('--name', ''), ('--user', '4')], ['a', 'b'])</span></pre></div>
+<ul>
+<li>Exception getopt.GetoptError：
+<ul>
+<li>概述：
+<ul>
+<li>在<strong>没有找到参数列表</strong>，或<strong>选项的需要的参数为空</strong>时会触发该异常；</li>
+<li>异常的参数是一个字符串，表示错误的原因。属性 msg 和 opt 为相关选项的错误信息；</li>
+</ul>
+</li>
+<li>举例：<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/9a63e967-400c-481d-a282-f48ed055405d"><img src="https://github.com/user-attachments/assets/9a63e967-400c-481d-a282-f48ed055405d" alt="Image" style="max-width: 100%;"></a></li>
+</ul>
+</li>
+</ul></div>
+<div style="font-size:small;margin-top:8px;float:right;"></div>
+
+<button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
+<div class="comments" id="comments"></div>
+
+</div>
+    <div id="footer"><div id="footer1">Copyright © <span id="copyrightYear"></span> <a href="https://ZFronts.github.io">ZFronts</a></div>
+<div id="footer2">
+    <span id="runday"></span><span>Powered by <a href="https://meekdai.com/Gmeek.html" target="_blank">Gmeek</a></span>
+</div>
+
+<script>
+var now=new Date();
+document.getElementById("copyrightYear").innerHTML=now.getFullYear();
+
+if(""!=""){
+    var startSite=new Date("");
+    var diff=now.getTime()-startSite.getTime();
+    var diffDay=Math.floor(diff/(1000*60*60*24));
+    document.getElementById("runday").innerHTML="网站运行"+diffDay+"天"+" • ";
+}
+</script></div>
+</body>
+<script>
+var IconList={'sun': 'M8 10.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM8 12a4 4 0 100-8 4 4 0 000 8zM8 0a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0V.75A.75.75 0 018 0zm0 13a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 018 13zM2.343 2.343a.75.75 0 011.061 0l1.06 1.061a.75.75 0 01-1.06 1.06l-1.06-1.06a.75.75 0 010-1.06zm9.193 9.193a.75.75 0 011.06 0l1.061 1.06a.75.75 0 01-1.06 1.061l-1.061-1.06a.75.75 0 010-1.061zM16 8a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0116 8zM3 8a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h1.5A.75.75 0 013 8zm10.657-5.657a.75.75 0 010 1.061l-1.061 1.06a.75.75 0 11-1.06-1.06l1.06-1.06a.75.75 0 011.06 0zm-9.193 9.193a.75.75 0 010 1.06l-1.06 1.061a.75.75 0 11-1.061-1.06l1.06-1.061a.75.75 0 011.061 0z', 'moon': 'M9.598 1.591a.75.75 0 01.785-.175 7 7 0 11-8.967 8.967.75.75 0 01.961-.96 5.5 5.5 0 007.046-7.046.75.75 0 01.175-.786zm1.616 1.945a7 7 0 01-7.678 7.678 5.5 5.5 0 107.678-7.678z', 'sync': 'M1.705 8.005a.75.75 0 0 1 .834.656 5.5 5.5 0 0 0 9.592 2.97l-1.204-1.204a.25.25 0 0 1 .177-.427h3.646a.25.25 0 0 1 .25.25v3.646a.25.25 0 0 1-.427.177l-1.38-1.38A7.002 7.002 0 0 1 1.05 8.84a.75.75 0 0 1 .656-.834ZM8 2.5a5.487 5.487 0 0 0-4.131 1.869l1.204 1.204A.25.25 0 0 1 4.896 6H1.25A.25.25 0 0 1 1 5.75V2.104a.25.25 0 0 1 .427-.177l1.38 1.38A7.002 7.002 0 0 1 14.95 7.16a.75.75 0 0 1-1.49.178A5.5 5.5 0 0 0 8 2.5Z', 'home': 'M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z', 'github': 'M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z', 'copy': 'M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z', 'check': 'M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z'};
+var utterancesLoad=0;
+
+let themeSettings={
+    "dark": ["dark","moon","#00f0ff","dark-blue"],
+    "light": ["light","sun","#ff5000","github-light"],
+    "auto": ["auto","sync","","preferred-color-scheme"]
+};
+function changeTheme(mode, icon, color, utheme){
+    document.documentElement.setAttribute("data-color-mode",mode);
+    document.getElementById("themeSwitch").setAttribute("d",value=IconList[icon]);
+    document.getElementById("themeSwitch").parentNode.style.color=color;
+    if(utterancesLoad==1){utterancesTheme(utheme);}
+}
+function modeSwitch(){
+    let currentMode=document.documentElement.getAttribute('data-color-mode');
+    let newMode = currentMode === "light" ? "dark" : currentMode === "dark" ? "auto" : "light";
+    localStorage.setItem("meek_theme", newMode);
+    if(themeSettings[newMode]){
+        changeTheme(...themeSettings[newMode]);
+    }
+}
+function utterancesTheme(theme){
+    const message={type:'set-theme',theme: theme};
+    const iframe=document.getElementsByClassName('utterances-frame')[0];
+    iframe.contentWindow.postMessage(message,'https://utteranc.es');
+}
+if(themeSettings[theme]){changeTheme(...themeSettings[theme]);}
+console.log("\n %c Gmeek last https://github.com/Meekdai/Gmeek \n","padding:5px 0;background:#02d81d;color:#fff");
+</script>
+
+<script>
+document.getElementById("pathHome").setAttribute("d",IconList["home"]);
+document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
+
+
+
+function openComments(){
+    cm=document.getElementById("comments");
+    cmButton=document.getElementById("cmButton");
+    cmButton.innerHTML="loading";
+    span=document.createElement("span");
+    span.setAttribute("class","AnimatedEllipsis");
+    cmButton.appendChild(span);
+
+    script=document.createElement("script");
+    script.setAttribute("src","https://utteranc.es/client.js");
+    script.setAttribute("repo","ZFronts/ZFronts.github.io");
+    script.setAttribute("issue-term","title");
+    
+    if(localStorage.getItem("meek_theme")=="dark"){script.setAttribute("theme","dark-blue");}
+    else if(localStorage.getItem("meek_theme")=="light") {script.setAttribute("theme","github-light");}
+    else{script.setAttribute("theme","preferred-color-scheme");}
+    
+    script.setAttribute("crossorigin","anonymous");
+    script.setAttribute("async","");
+    cm.appendChild(script);
+
+    int=self.setInterval("iFrameLoading()",200);
+}
+
+function iFrameLoading(){
+    var utterances=document.getElementsByClassName('utterances');
+    if(utterances.length==1){
+        if(utterances[0].style.height!=""){
+            utterancesLoad=1;
+            int=window.clearInterval(int);
+            document.getElementById("cmButton").style.display="none";
+            console.log("utterances Load OK");
+        }
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const createClipboardHTML = (codeContent, additionalClasses = '') => `
+        <pre class="notranslate"><code class="notranslate">${codeContent}</code></pre>
+        <div class="clipboard-container position-absolute right-0 top-0 ${additionalClasses}">
+            <clipboard-copy class="ClipboardButton btn m-2 p-0" role="button" style="display: inherit;">
+                <svg height="16" width="16" class="octicon octicon-copy m-2"><path d="${IconList["copy"]}"></path></svg>
+                <svg height="16" width="16" class="octicon octicon-check color-fg-success m-2 d-none"><path d="${IconList["check"]}"></path></svg>
+            </clipboard-copy>
+            <div class="copy-feedback">Copied!</div>
+        </div>
+    `;
+
+    const handleCodeElements = (selector = '') => {
+        document.querySelectorAll(selector).forEach(codeElement => {
+            const codeContent = codeElement.innerHTML;
+            const newStructure = document.createElement('div');
+            newStructure.className = 'snippet-clipboard-content position-relative overflow-auto';
+            newStructure.innerHTML = createClipboardHTML(codeContent);
+
+            const parentElement = codeElement.parentElement;
+            if (selector.includes('highlight')) {
+                parentElement.insertBefore(newStructure, codeElement.nextSibling);
+                parentElement.removeChild(codeElement);
+            } else {
+                parentElement.parentElement.replaceChild(newStructure, parentElement);
+            }
+        });
+    };
+
+    handleCodeElements('pre.notranslate > code.notranslate');
+    handleCodeElements('div.highlight > pre.notranslate');
+
+    let currentFeedback = null;
+    document.querySelectorAll('clipboard-copy').forEach(copyButton => {
+        copyButton.addEventListener('click', () => {
+            const codeContent = copyButton.closest('.snippet-clipboard-content').innerText;
+            const tempTextArea = document.createElement('textarea');
+            tempTextArea.value = codeContent;
+            document.body.appendChild(tempTextArea);
+            tempTextArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempTextArea);
+
+            const copyIcon = copyButton.querySelector('.octicon-copy');
+            const checkIcon = copyButton.querySelector('.octicon-check');
+            const copyFeedback = copyButton.nextElementSibling;
+
+            if (currentFeedback && currentFeedback !== copyFeedback) {currentFeedback.style.display = 'none';}
+            currentFeedback = copyFeedback;
+
+            copyIcon.classList.add('d-none');
+            checkIcon.classList.remove('d-none');
+            copyFeedback.style.display = 'block';
+            copyButton.style.borderColor = 'var(--color-success-fg)';
+
+            setTimeout(() => {
+                copyIcon.classList.remove('d-none');
+                checkIcon.classList.add('d-none');
+                copyFeedback.style.display = 'none';
+                copyButton.style.borderColor = '';
+            }, 2000);
+        });
+    });
+});
+
+</script>
+<script src='https://blog.meekdai.com/Gmeek/plugins/GmeekTOC.js'></script><script src='https://blog.meekdai.com/Gmeek/plugins/lightbox.js'></script>
+
+</html>
