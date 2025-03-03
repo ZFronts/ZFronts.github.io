@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>ZFronts</title><link>https://ZFronts.github.io</link><description>记录计算机专业知识</description><copyright>ZFronts</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://ZFronts.github.io</link></image><lastBuildDate>Mon, 03 Mar 2025 14:42:46 +0000</lastBuildDate><managingEditor>ZFronts</managingEditor><ttl>60</ttl><webMaster>ZFronts</webMaster><item><title>day3 初级——运算符</title><link>https://ZFronts.github.io/post/day3%20-chu-ji-%E2%80%94%E2%80%94-yun-suan-fu.html</link><description>`部分内容基于菜鸟教程的《运算符》部分，同时拓展了一些点`
-# 一、算术运算符：
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>ZFronts</title><link>https://ZFronts.github.io</link><description>记录计算机专业知识</description><copyright>ZFronts</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://ZFronts.github.io</link></image><lastBuildDate>Mon, 03 Mar 2025 15:43:00 +0000</lastBuildDate><managingEditor>ZFronts</managingEditor><ttl>60</ttl><webMaster>ZFronts</webMaster><item><title>day3 初级——运算符</title><link>https://ZFronts.github.io/post/day3%20-chu-ji-%E2%80%94%E2%80%94-yun-suan-fu.html</link><description>`部分内容基于菜鸟教程的《运算符》部分，同时拓展了一些点`
+# 3.1 算术运算符：
 
 ![Image](https://github.com/user-attachments/assets/5ce7e3cc-4971-4821-a57b-fb03083e0dcd)
 举例：
@@ -39,15 +39,15 @@ print(f'{a} // {b} = {a // b}')
 # -2 ** 5 = -32
 # -2 // 5 = -1
 ```
-# 二、（二进制）位运算符：
-## 1、注意：
-- 如果数据为非二进制数据，计算机将把数据&lt;ins&gt;自动转成**二进制**&lt;/ins&gt;再进行计算；
-- 生活中通常使用**8位二进制**，在程序中则不受位数限制（在超过最大数以前）
-## 2、运算符表：
+# 3.2 （二进制）位运算符：
+- 注意：
+  - 如果数据为非二进制数据，计算机将把数据&lt;ins&gt;自动转成**二进制**&lt;/ins&gt;再进行计算；
+  - 生活中通常使用**8位二进制**，在程序中则不受位数限制（在超过最大数以前）；
+- 运算符表：
 
 ![Image](https://github.com/user-attachments/assets/184a147a-4d43-4366-b06f-dc56837ca1b1)
 
-举例：
+- 举例：
 ```python
 a = 60            # 60 = (0) 0011 1100 —— (0)为符号位，表示为正数
 b = 13            # 13 = 0000 1101 
@@ -71,17 +71,13 @@ print ('5 - c 的值为：', c)
 c = a &gt;&gt; 2       # 15 = 0000 1111
 print ('6 - c 的值为：', c)
 ```
-# 三、赋值运算符：
-## 1、运算符表：
-
-![Image](https://github.com/user-attachments/assets/ddae3cb5-e52b-4a78-a52f-8e78b76cfedc)
-
-## 2、特点：
+# 3.3 赋值运算符：
+## 3.3.1 特点：
 - 结合性：&lt;ins&gt;**从右往左**&lt;/ins&gt;；
 - 支持&lt;ins&gt;**链式赋值**&lt;/ins&gt;：e.g.a=b=c=20（id相同）；
 - 支持&lt;ins&gt;**参数赋值**&lt;/ins&gt;：即支持+=、-=、*=、/=、//=、%=、**=、&lt;&lt;=、&gt;&gt;=、&amp;=、|=、^=；
 - 支持&lt;ins&gt;**系列解包赋值**&lt;/ins&gt;：e.g.a，b，c=20，30，40；`通过这个特点可简单实现交换变量：a，b=10，20;a，b=b，a;`
-## 3、海象运算符：
+## 3.3.2 海象运算符：
 参考[菜鸟教程](https://www.runoob.com/python3/python3-basic-operators.html)
 - 主要目的：在表达式中&lt;ins&gt;**同时进行赋值和返回赋值的值**&lt;/ins&gt;
 - 实际意义：使用海象运算符可以在一些情况下简化代码，尤其是**在需要在表达式中使用赋值结果的情况下**。</description><guid isPermaLink="true">https://ZFronts.github.io/post/day3%20-chu-ji-%E2%80%94%E2%80%94-yun-suan-fu.html</guid><pubDate>Mon, 03 Mar 2025 14:41:29 +0000</pubDate></item><item><title>day2 初级——第2章 良好的编程约定</title><link>https://ZFronts.github.io/post/day2%20-chu-ji-%E2%80%94%E2%80%94-di-2-zhang-%20-liang-hao-de-bian-cheng-yue-ding.html</link><description>`一部分内容基于菜鸟教程的《基础语法》（（数字(Number)类型之前+同一行显示多条语句其余部分后面几天会涉及）、《注释》和《`[Python3 命令行参数](https://www.runoob.com/python3/python3-command-line-arguments.html)`》部分；有小部分内容基于《NCRE二级教程——Python语言程序设计》的2.1、2.2；同时拓展了一些点`

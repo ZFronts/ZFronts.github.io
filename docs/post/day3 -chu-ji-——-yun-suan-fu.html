@@ -11,7 +11,7 @@
         document.documentElement.setAttribute("data-color-mode", theme);
     </script>
 <meta name="description" content="`部分内容基于菜鸟教程的《运算符》部分，同时拓展了一些点`
-# 一、算术运算符：
+# 3.1 算术运算符：
 
 ![Image](https://github.com/user-attachments/assets/5ce7e3cc-4971-4821-a57b-fb03083e0dcd)
 举例：
@@ -50,15 +50,15 @@ print(f'{a} // {b} = {a // b}')
 # -2 ** 5 = -32
 # -2 // 5 = -1
 ```
-# 二、（二进制）位运算符：
-## 1、注意：
-- 如果数据为非二进制数据，计算机将把数据<ins>自动转成**二进制**</ins>再进行计算；
-- 生活中通常使用**8位二进制**，在程序中则不受位数限制（在超过最大数以前）
-## 2、运算符表：
+# 3.2 （二进制）位运算符：
+- 注意：
+  - 如果数据为非二进制数据，计算机将把数据<ins>自动转成**二进制**</ins>再进行计算；
+  - 生活中通常使用**8位二进制**，在程序中则不受位数限制（在超过最大数以前）；
+- 运算符表：
 
 ![Image](https://github.com/user-attachments/assets/184a147a-4d43-4366-b06f-dc56837ca1b1)
 
-举例：
+- 举例：
 ```python
 a = 60            # 60 = (0) 0011 1100 —— (0)为符号位，表示为正数
 b = 13            # 13 = 0000 1101 
@@ -82,23 +82,19 @@ print ('5 - c 的值为：', c)
 c = a >> 2       # 15 = 0000 1111
 print ('6 - c 的值为：', c)
 ```
-# 三、赋值运算符：
-## 1、运算符表：
-
-![Image](https://github.com/user-attachments/assets/ddae3cb5-e52b-4a78-a52f-8e78b76cfedc)
-
-## 2、特点：
+# 3.3 赋值运算符：
+## 3.3.1 特点：
 - 结合性：<ins>**从右往左**</ins>；
 - 支持<ins>**链式赋值**</ins>：e.g.a=b=c=20（id相同）；
 - 支持<ins>**参数赋值**</ins>：即支持+=、-=、*=、/=、//=、%=、**=、<<=、>>=、&=、|=、^=；
 - 支持<ins>**系列解包赋值**</ins>：e.g.a，b，c=20，30，40；`通过这个特点可简单实现交换变量：a，b=10，20;a，b=b，a;`
-## 3、海象运算符：
+## 3.3.2 海象运算符：
 参考[菜鸟教程](https://www.runoob.com/python3/python3-basic-operators.html)
 - 主要目的：在表达式中<ins>**同时进行赋值和返回赋值的值**</ins>
 - 实际意义：使用海象运算符可以在一些情况下简化代码，尤其是**在需要在表达式中使用赋值结果的情况下**。">
 <meta property="og:title" content="day3 初级——运算符">
 <meta property="og:description" content="`部分内容基于菜鸟教程的《运算符》部分，同时拓展了一些点`
-# 一、算术运算符：
+# 3.1 算术运算符：
 
 ![Image](https://github.com/user-attachments/assets/5ce7e3cc-4971-4821-a57b-fb03083e0dcd)
 举例：
@@ -137,15 +133,15 @@ print(f'{a} // {b} = {a // b}')
 # -2 ** 5 = -32
 # -2 // 5 = -1
 ```
-# 二、（二进制）位运算符：
-## 1、注意：
-- 如果数据为非二进制数据，计算机将把数据<ins>自动转成**二进制**</ins>再进行计算；
-- 生活中通常使用**8位二进制**，在程序中则不受位数限制（在超过最大数以前）
-## 2、运算符表：
+# 3.2 （二进制）位运算符：
+- 注意：
+  - 如果数据为非二进制数据，计算机将把数据<ins>自动转成**二进制**</ins>再进行计算；
+  - 生活中通常使用**8位二进制**，在程序中则不受位数限制（在超过最大数以前）；
+- 运算符表：
 
 ![Image](https://github.com/user-attachments/assets/184a147a-4d43-4366-b06f-dc56837ca1b1)
 
-举例：
+- 举例：
 ```python
 a = 60            # 60 = (0) 0011 1100 —— (0)为符号位，表示为正数
 b = 13            # 13 = 0000 1101 
@@ -169,17 +165,13 @@ print ('5 - c 的值为：', c)
 c = a >> 2       # 15 = 0000 1111
 print ('6 - c 的值为：', c)
 ```
-# 三、赋值运算符：
-## 1、运算符表：
-
-![Image](https://github.com/user-attachments/assets/ddae3cb5-e52b-4a78-a52f-8e78b76cfedc)
-
-## 2、特点：
+# 3.3 赋值运算符：
+## 3.3.1 特点：
 - 结合性：<ins>**从右往左**</ins>；
 - 支持<ins>**链式赋值**</ins>：e.g.a=b=c=20（id相同）；
 - 支持<ins>**参数赋值**</ins>：即支持+=、-=、*=、/=、//=、%=、**=、<<=、>>=、&=、|=、^=；
 - 支持<ins>**系列解包赋值**</ins>：e.g.a，b，c=20，30，40；`通过这个特点可简单实现交换变量：a，b=10，20;a，b=b，a;`
-## 3、海象运算符：
+## 3.3.2 海象运算符：
 参考[菜鸟教程](https://www.runoob.com/python3/python3-basic-operators.html)
 - 主要目的：在表达式中<ins>**同时进行赋值和返回赋值的值**</ins>
 - 实际意义：使用海象运算符可以在一些情况下简化代码，尤其是**在需要在表达式中使用赋值结果的情况下**。">
@@ -254,7 +246,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </div>
     <div id="content">
 <div class="markdown-body" id="postBody"><p><code class="notranslate">部分内容基于菜鸟教程的《运算符》部分，同时拓展了一些点</code></p>
-<h1>一、算术运算符：</h1>
+<h1>3.1 算术运算符：</h1>
 <p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/5ce7e3cc-4971-4821-a57b-fb03083e0dcd"><img src="https://github.com/user-attachments/assets/5ce7e3cc-4971-4821-a57b-fb03083e0dcd" alt="Image" style="max-width: 100%;"></a><br>
 举例：</p>
 <div class="highlight highlight-source-python"><pre class="notranslate"><span class="pl-s1">a</span> <span class="pl-c1">=</span> <span class="pl-c1">2</span>;<span class="pl-s1">b</span> <span class="pl-c1">=</span> <span class="pl-c1">-</span><span class="pl-c1">5</span>
@@ -290,15 +282,20 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <span class="pl-c"># -2 % 5 = 3 —— -2%5=-2-5*(-1)=-2+5=3</span>
 <span class="pl-c"># -2 ** 5 = -32</span>
 <span class="pl-c"># -2 // 5 = -1</span></pre></div>
-<h1>二、（二进制）位运算符：</h1>
-<h2>1、注意：</h2>
+<h1>3.2 （二进制）位运算符：</h1>
+<ul>
+<li>注意：
 <ul>
 <li>如果数据为非二进制数据，计算机将把数据<ins>自动转成<strong>二进制</strong></ins>再进行计算；</li>
-<li>生活中通常使用<strong>8位二进制</strong>，在程序中则不受位数限制（在超过最大数以前）</li>
+<li>生活中通常使用<strong>8位二进制</strong>，在程序中则不受位数限制（在超过最大数以前）；</li>
 </ul>
-<h2>2、运算符表：</h2>
+</li>
+<li>运算符表：</li>
+</ul>
 <p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/184a147a-4d43-4366-b06f-dc56837ca1b1"><img src="https://github.com/user-attachments/assets/184a147a-4d43-4366-b06f-dc56837ca1b1" alt="Image" style="max-width: 100%;"></a></p>
-<p>举例：</p>
+<ul>
+<li>举例：</li>
+</ul>
 <div class="highlight highlight-source-python"><pre class="notranslate"><span class="pl-s1">a</span> <span class="pl-c1">=</span> <span class="pl-c1">60</span>            <span class="pl-c"># 60 = (0) 0011 1100 —— (0)为符号位，表示为正数</span>
 <span class="pl-s1">b</span> <span class="pl-c1">=</span> <span class="pl-c1">13</span>            <span class="pl-c"># 13 = 0000 1101 </span>
 <span class="pl-s1">c</span> <span class="pl-c1">=</span> <span class="pl-c1">0</span>
@@ -320,17 +317,15 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
  
 <span class="pl-s1">c</span> <span class="pl-c1">=</span> <span class="pl-s1">a</span> <span class="pl-c1">&gt;&gt;</span> <span class="pl-c1">2</span>       <span class="pl-c"># 15 = 0000 1111</span>
 <span class="pl-en">print</span> (<span class="pl-s">"6 - c 的值为："</span>, <span class="pl-s1">c</span>)</pre></div>
-<h1>三、赋值运算符：</h1>
-<h2>1、运算符表：</h2>
-<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/ddae3cb5-e52b-4a78-a52f-8e78b76cfedc"><img src="https://github.com/user-attachments/assets/ddae3cb5-e52b-4a78-a52f-8e78b76cfedc" alt="Image" style="max-width: 100%;"></a></p>
-<h2>2、特点：</h2>
+<h1>3.3 赋值运算符：</h1>
+<h2>3.3.1 特点：</h2>
 <ul>
 <li>结合性：<ins><strong>从右往左</strong></ins>；</li>
 <li>支持<ins><strong>链式赋值</strong></ins>：e.g.a=b=c=20（id相同）；</li>
 <li>支持<ins><strong>参数赋值</strong></ins>：即支持+=、-=、*=、/=、//=、%=、**=、&lt;&lt;=、&gt;&gt;=、&amp;=、|=、^=；</li>
 <li>支持<ins><strong>系列解包赋值</strong></ins>：e.g.a，b，c=20，30，40；<code class="notranslate">通过这个特点可简单实现交换变量：a，b=10，20;a，b=b，a;</code></li>
 </ul>
-<h2>3、海象运算符：</h2>
+<h2>3.3.2 海象运算符：</h2>
 <p>参考<a href="https://www.runoob.com/python3/python3-basic-operators.html" rel="nofollow">菜鸟教程</a></p>
 <ul>
 <li>主要目的：在表达式中<ins><strong>同时进行赋值和返回赋值的值</strong></ins></li>
@@ -355,22 +350,29 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </li>
 </ul>
 <p><code class="notranslate">海象运算符的理解也可以参考博客：</code><a href="https://blog.csdn.net/weixin_43483381/article/details/104084404" rel="nofollow">深入浅出理解海象运算符:=</a></p>
-<h1>四、比较运算符：</h1>
-<h2>1、运算符表：</h2>
-<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/8a219d24-115e-426d-b1af-d6b5242167c2"><img src="https://github.com/user-attachments/assets/8a219d24-115e-426d-b1af-d6b5242167c2" alt="Image" style="max-width: 100%;"></a></p>
-<h2>2、特点：</h2>
+<h2>3.3.3 运算符表：</h2>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/ddae3cb5-e52b-4a78-a52f-8e78b76cfedc"><img src="https://github.com/user-attachments/assets/ddae3cb5-e52b-4a78-a52f-8e78b76cfedc" alt="Image" style="max-width: 100%;"></a></p>
+<h1>3.4 比较运算符：</h1>
+<ul>
+<li>特点：
 <ul>
 <li>支持<ins><strong>链式比较</strong></ins>，例如<code class="notranslate">a&lt;b&lt;c、a&gt;b&gt;c、a&lt;b&gt;c、a&gt;b&lt;c、a&lt;b==c、a!=b&gt;c等……</code></li>
-<li>链式比较<ins><strong>隐含and运算符</strong></ins>&gt;，例如a&lt;b&lt;c等价于(a&lt;b) and (b&lt;c)</li>
+<li>链式比较<ins><strong>隐含and运算符</strong></ins>，例如a&lt;b&lt;c等价于(a&lt;b) and (b&lt;c)</li>
 </ul>
-<h1>五、逻辑（布尔）运算符：</h1>
-<h2>1、运算符表</h2>
-<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/2df9d684-fa0b-4e51-abd7-6d9ad566b598"><img src="https://github.com/user-attachments/assets/2df9d684-fa0b-4e51-abd7-6d9ad566b598" alt="Image" style="max-width: 100%;"></a></p>
-<h2>2、注意：</h2>
-<p>and 和 or 具有<ins><strong>短路</strong></ins>性质；</p>
+</li>
+<li>运算符表：</li>
+</ul>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/8a219d24-115e-426d-b1af-d6b5242167c2"><img src="https://github.com/user-attachments/assets/8a219d24-115e-426d-b1af-d6b5242167c2" alt="Image" style="max-width: 100%;"></a></p>
+<h1>3.5 逻辑（布尔）运算符：</h1>
+<ul>
+<li>运算符表<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/2df9d684-fa0b-4e51-abd7-6d9ad566b598"><img src="https://github.com/user-attachments/assets/2df9d684-fa0b-4e51-abd7-6d9ad566b598" alt="Image" style="max-width: 100%;"></a></li>
+<li>注意：and 和 or 具有<ins><strong>短路</strong></ins>性质；
 <ul>
 <li>and的短路：当and左侧值为False时，不去计算右侧的值而直接返回False</li>
 <li>or的短路：当or左侧值为True时，不去计算右侧的值而直接返回True</li>
+</ul>
+</li>
 </ul>
 <div class="highlight highlight-source-python"><pre class="notranslate"><span class="pl-s1">a</span>, <span class="pl-s1">b</span>, <span class="pl-s1">c</span>, <span class="pl-s1">d</span>, <span class="pl-s1">m</span>, <span class="pl-s1">n</span> <span class="pl-c1">=</span> <span class="pl-c1">5</span>, <span class="pl-c1">6</span>, <span class="pl-c1">7</span>, <span class="pl-c1">8</span>, <span class="pl-c1">2</span>, <span class="pl-c1">2</span>
 <span class="pl-en">print</span>((<span class="pl-s1">m</span><span class="pl-c1">:=</span><span class="pl-s1">a</span>)<span class="pl-c1">&gt;</span><span class="pl-s1">b</span> <span class="pl-c1">and</span> (<span class="pl-s1">n</span><span class="pl-c1">:=</span><span class="pl-s1">c</span>)<span class="pl-c1">&gt;</span><span class="pl-s1">d</span>)
@@ -388,7 +390,9 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <span class="pl-c"># m = 2, n = 2</span>
 <span class="pl-c"># True</span>
 <span class="pl-c"># m = 5, n = 2</span></pre></div>
-<h2>3、举例：</h2>
+<ul>
+<li>举例：</li>
+</ul>
 <div class="highlight highlight-source-python"><pre class="notranslate"><span class="pl-s1">a</span> <span class="pl-c1">=</span> <span class="pl-c1">10</span>
 <span class="pl-s1">b</span> <span class="pl-c1">=</span> <span class="pl-c1">20</span>
 
@@ -408,12 +412,10 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <span class="pl-c"># 0 or 20 = 20</span>
 <span class="pl-c"># not 0 = True</span>
 <span class="pl-c"># not 20 = False</span></pre></div>
-<h1>六、成员运算符：</h1>
+<h1>3.6 成员运算符：</h1>
 <p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/68a72741-de78-4ccf-817d-bc89321e88cb"><img src="https://github.com/user-attachments/assets/68a72741-de78-4ccf-817d-bc89321e88cb" alt="Image" style="max-width: 100%;"></a></p>
 <p>举例：</p>
-<div class="highlight highlight-source-python"><pre class="notranslate"><span class="pl-c">#!/usr/bin/python3</span>
-
-<span class="pl-s1">a</span> <span class="pl-c1">=</span> <span class="pl-c1">10</span>
+<div class="highlight highlight-source-python"><pre class="notranslate"><span class="pl-s1">a</span> <span class="pl-c1">=</span> <span class="pl-c1">10</span>
 <span class="pl-s1">b</span> <span class="pl-c1">=</span> <span class="pl-c1">20</span>
 <span class="pl-s1">list</span> <span class="pl-c1">=</span> [<span class="pl-c1">1</span>, <span class="pl-c1">2</span>, <span class="pl-c1">3</span>, <span class="pl-c1">4</span>, <span class="pl-c1">5</span>]
 
@@ -437,34 +439,49 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <span class="pl-c"># 1 - 变量 a 不在给定的列表中 list 中</span>
 <span class="pl-c"># 2 - 变量 b 不在给定的列表中 list 中</span>
 <span class="pl-c"># 3 - 变量 a 在给定的列表中 list 中</span></pre></div>
-<h1>七、身份运算符：</h1>
-<h2>1、运算符表：</h2>
+<h1>3.7 身份运算符：</h1>
+<ul>
+<li>运算符表：</li>
+</ul>
 <p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/fd305c87-34ee-4766-b13f-519f4dcb0e7f"><img src="https://github.com/user-attachments/assets/fd305c87-34ee-4766-b13f-519f4dcb0e7f" alt="Image" style="max-width: 100%;"></a></p>
-<h2>2、is 与 == 区别：</h2>
-<p>is 用于判断两个变量引用对象是否为同一个， == 用于判断引用变量的值是否相等。</p>
-<h1>八、其它运算符：</h1>
-<h2>1、绑定或加圆括号的表达式(expressions...)；</h2>
-<h2>2、列表显示[expressions...]；</h2>
-<h2>3、字典显示{key:value...}；</h2>
-<h2>4、集合显示{expressions...}；</h2>
-<h2>5、抽取（索引）x[index]；</h2>
-<h2>6、切片x[index1:index2]；</h2>
-<h2>7、调用x(arguments...)；</h2>
-<h2>8、属性引用x.attribute；</h2>
-<h2>9、await表达式await x：</h2>
-<p>用于<ins><strong>管理协程</strong></ins>，<strong>不用掌握</strong>。</p>
-<h2>10、条件运算符-- if -- else --：</h2>
+<ul>
+<li>is 与 == 区别：<br>
+is 用于判断两个变量引用对象是否为同一个， == 用于判断引用变量的值是否相等:</li>
+</ul>
+<h1>3.8 其它运算符：</h1>
+<ul>
+<li><strong>绑定</strong>或<strong>加圆括号的表达式</strong>(expressions...)；</li>
+<li><strong>列表</strong>显示[expressions...]；</li>
+<li><strong>字典</strong>显示{key:value...}；</li>
+<li><strong>集合</strong>显示{expressions...}；</li>
+<li><strong>抽取</strong>（<strong>索引</strong>）x[index]；</li>
+<li><strong>切片</strong>x[index1:index2]；</li>
+<li><strong>调用</strong>x(arguments...)；</li>
+<li><strong>属性引用</strong>x.attribute；</li>
+<li>await表达式await x：
+<ul>
+<li>用于<ins><strong>管理协程</strong></ins>，<strong>不用掌握</strong>。</li>
+</ul>
+</li>
+<li><strong>条件运算符</strong>-- if -- else --：
 <ul>
 <li>类似于C/C++中的“?:”；</li>
 <li>表达式<code class="notranslate">x if C else y</code>首先是对条件 C 而非 x 求值。 如果 C 为真，x 将被求值并返回其值；否则将对 y 求值并返回其值。</li>
 </ul>
-<h2>11、lambda表达式：</h2>
-<p>被用于<ins><strong>创建匿名函数</strong></ins>。 表达式<code class="notranslate">lambda parameters: expression</code>会产生一个<strong>函数对象</strong> 。 该未命名对象的行为类似于用以下方式定义的函数：</p>
+</li>
+<li>lambda表达式：
+<ul>
+<li>被用于<ins><strong>创建匿名函数</strong></ins>。 表达式<code class="notranslate">lambda parameters: expression</code>会产生一个<strong>函数对象</strong> 。 该未命名对象的行为类似于用以下方式定义的函数：</li>
+</ul>
+</li>
+</ul>
 <div class="highlight highlight-source-python"><pre class="notranslate"><span class="pl-k">def</span> <span class="pl-c1">&lt;</span><span class="pl-k">lambda</span><span class="pl-c1">&gt;</span>(<span class="pl-s1">parameters</span>):
     <span class="pl-s1">return</span> <span class="pl-s1">expression</span></pre></div>
-<h2>12、逗号运算符：</h2>
-<p>主要作用之一是<ins><strong>创建元组</strong></ins>。即使没有显式的圆括号，逗号也会将多个值组合成一个元组；</p>
-<h1>九、运算符优先级：</h1>
+<ul>
+<li><strong>逗号</strong>运算符：<br>
+主要作用之一是<ins><strong>创建元组</strong></ins>。即使没有显式的圆括号，逗号也会将多个值组合成一个元组；</li>
+</ul>
+<h1>3.9 运算符优先级：</h1>
 <p><code class="notranslate">勘误：赋值运算符中漏了个海象运算符</code><br>
 <a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/b109e8a4-5ccd-4eec-8bbc-74af9f076844"><img src="https://github.com/user-attachments/assets/b109e8a4-5ccd-4eec-8bbc-74af9f076844" alt="Image" style="max-width: 100%;"></a></p></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
