@@ -1,4 +1,4 @@
-`部分内容基于菜鸟教程的《基础语法》（（数字(Number)类型之前+同一行显示多条语句其余部分后面几天会涉及）、《注释》和《`[Python3 命令行参数](https://www.runoob.com/python3/python3-command-line-arguments.html)`》部分，同时拓展了一些点`
+`一部分内容基于菜鸟教程的《基础语法》（（数字(Number)类型之前+同一行显示多条语句其余部分后面几天会涉及）、《注释》和《`[Python3 命令行参数](https://www.runoob.com/python3/python3-command-line-arguments.html)`》部分；有小部分内容基于《NCRE二级教程——Python语言程序设计》的2.1、2.2；同时拓展了一些点`
 # 2.1 编码格式：
 ## 2.1.1 python中常见的编码格式：
 - 内存编码：python解释器使用<ins>**Unicode编码**</ins>作为内存编码，简称<ins>**内码**</ins>；
