@@ -10,13 +10,13 @@
         let theme = localStorage.getItem("meek_theme") || "light";
         document.documentElement.setAttribute("data-color-mode", theme);
     </script>
-<meta name="description" content="`一部分内容基于菜鸟教程的《基础语法》（（数字(Number)类型之前+同一行显示多条语句其余部分后面几天会涉及）、《注释》和《`[Python3 命令行参数](https://www.runoob.com/python3/python3-command-line-arguments.html)`》部分；有小部分内容基于《NCRE二级教程——Python语言程序设计》的2.1、2.2；同时拓展了一些点`
+<meta name="description" content="`一部分内容基于菜鸟教程的《基础语法》（（数字(Number)类型之前+同一行显示多条语句其余部分后面几天会涉及）、《注释》和《`[Python3 命令行参数](https://www.runoob.com/python3/python3-command-line-arguments.html)`》部分；有小部分内容基于《NCRE二级教程——Python语言程序设计》的2.1、2.2和2.4.1；同时拓展了一些点`
 # 2.1 编码格式：
 ## 2.1.1 python中常见的编码格式：
 - 内存编码：python解释器使用<ins>**Unicode编码**</ins>作为内存编码，简称<ins>**内码**</ins>；
 - 外存编码：在Python中，保存文件时可以使用不同的编码方式。">
 <meta property="og:title" content="day2 初级——第2章 良好的编程约定">
-<meta property="og:description" content="`一部分内容基于菜鸟教程的《基础语法》（（数字(Number)类型之前+同一行显示多条语句其余部分后面几天会涉及）、《注释》和《`[Python3 命令行参数](https://www.runoob.com/python3/python3-command-line-arguments.html)`》部分；有小部分内容基于《NCRE二级教程——Python语言程序设计》的2.1、2.2；同时拓展了一些点`
+<meta property="og:description" content="`一部分内容基于菜鸟教程的《基础语法》（（数字(Number)类型之前+同一行显示多条语句其余部分后面几天会涉及）、《注释》和《`[Python3 命令行参数](https://www.runoob.com/python3/python3-command-line-arguments.html)`》部分；有小部分内容基于《NCRE二级教程——Python语言程序设计》的2.1、2.2和2.4.1；同时拓展了一些点`
 # 2.1 编码格式：
 ## 2.1.1 python中常见的编码格式：
 - 内存编码：python解释器使用<ins>**Unicode编码**</ins>作为内存编码，简称<ins>**内码**</ins>；
@@ -91,7 +91,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </div>
 </div>
     <div id="content">
-<div class="markdown-body" id="postBody"><p><code class="notranslate">一部分内容基于菜鸟教程的《基础语法》（（数字(Number)类型之前+同一行显示多条语句其余部分后面几天会涉及）、《注释》和《</code><a href="https://www.runoob.com/python3/python3-command-line-arguments.html" rel="nofollow">Python3 命令行参数</a><code class="notranslate">》部分；有小部分内容基于《NCRE二级教程——Python语言程序设计》的2.1、2.2；同时拓展了一些点</code></p>
+<div class="markdown-body" id="postBody"><p><code class="notranslate">一部分内容基于菜鸟教程的《基础语法》（（数字(Number)类型之前+同一行显示多条语句其余部分后面几天会涉及）、《注释》和《</code><a href="https://www.runoob.com/python3/python3-command-line-arguments.html" rel="nofollow">Python3 命令行参数</a><code class="notranslate">》部分；有小部分内容基于《NCRE二级教程——Python语言程序设计》的2.1、2.2和2.4.1；同时拓展了一些点</code></p>
 <h1>2.1 编码格式：</h1>
 <h2>2.1.1 python中常见的编码格式：</h2>
 <ul>
@@ -410,19 +410,33 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </ul>
 </li>
 </ul>
-<h1>2.6 Python命令行参数：</h1>
+<h1>2.6 表达式：</h1>
+<ul>
+<li>概述：<strong>产生</strong>或<strong>计算新数据值</strong>的<strong>代码片段</strong>；</li>
+<li>作用：以<strong>表达单一功能为目的</strong>，运算后<strong>产生运算结果</strong>，运算结果的<strong>类型由操作符/运算符决定</strong>；</li>
+<li>组成：一般由<strong>数据</strong>和<strong>操作符</strong>等组成，是构成Python语句的重要组成部分；</li>
+<li>举例：</li>
+</ul>
+<div class="highlight highlight-source-python"><pre class="notranslate"><span class="pl-c"># 命令行运行</span>
+<span class="pl-c1">&gt;</span><span class="pl-c1">&gt;&gt;</span> <span class="pl-c1">1024</span><span class="pl-c1">*</span><span class="pl-c1">32</span>
+<span class="pl-c1">32768</span>
+<span class="pl-c1">&gt;</span><span class="pl-c1">&gt;&gt;</span> <span class="pl-s">"你"</span><span class="pl-c1">+</span><span class="pl-s">"好"</span>
+<span class="pl-s">'你好'</span>
+<span class="pl-c1">&gt;</span><span class="pl-c1">&gt;&gt;</span> <span class="pl-c1">1024</span><span class="pl-c1">&gt;</span><span class="pl-c1">32</span>
+<span class="pl-c1">True</span></pre></div>
+<h1>2.7 Python命令行参数：</h1>
 <p>参考<a href="https://www.runoob.com/python3/python3-command-line-arguments.html" rel="nofollow">菜鸟教程——Python3 命令行参数</a></p>
-<h2>2.6.1 命令行参数：</h2>
+<h2>2.7.1 命令行参数：</h2>
 <p>使用命令行运行.py文件时，python后面的各字符（以空格分隔）均为命令行参数；</p>
 <div class="highlight highlight-source-python"><pre class="notranslate"><span class="pl-s1">python</span> <span class="pl-s1">test</span>.<span class="pl-c1">py</span> <span class="pl-s1">arg1</span> <span class="pl-s1">arg2</span> <span class="pl-s1">arg3</span>
 <span class="pl-s1">的命令行参数有test</span>.<span class="pl-c1">py</span>、<span class="pl-s1">arg1</span>、<span class="pl-s1">arg2</span>、<span class="pl-s1">arg3</span></pre></div>
-<h2>2.6.2 利用sys模块获取命令行参数：</h2>
+<h2>2.7.2 利用sys模块获取命令行参数：</h2>
 <ul>
 <li>获取命令行参数列表：<code class="notranslate">sys.argv</code></li>
 <li>获取命令行参数个数：<code class="notranslate">len(sys.argv)</code></li>
 <li>获取脚本名：<code class="notranslate">sys.argv[0]</code></li>
 </ul>
-<h2>2.6.3 利用getopt模块来获取命令行参数：</h2>
+<h2>2.7.3 利用getopt模块来获取命令行参数：</h2>
 <ul>
 <li>getopt.getopt()函数：
 <ul>

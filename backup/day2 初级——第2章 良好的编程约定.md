@@ -1,4 +1,4 @@
-`一部分内容基于菜鸟教程的《基础语法》（（数字(Number)类型之前+同一行显示多条语句其余部分后面几天会涉及）、《注释》和《`[Python3 命令行参数](https://www.runoob.com/python3/python3-command-line-arguments.html)`》部分；有小部分内容基于《NCRE二级教程——Python语言程序设计》的2.1、2.2；同时拓展了一些点`
+`一部分内容基于菜鸟教程的《基础语法》（（数字(Number)类型之前+同一行显示多条语句其余部分后面几天会涉及）、《注释》和《`[Python3 命令行参数](https://www.runoob.com/python3/python3-command-line-arguments.html)`》部分；有小部分内容基于《NCRE二级教程——Python语言程序设计》的2.1、2.2和2.4.1；同时拓展了一些点`
 # 2.1 编码格式：
 ## 2.1.1 python中常见的编码格式：
 - 内存编码：python解释器使用<ins>**Unicode编码**</ins>作为内存编码，简称<ins>**内码**</ins>；
@@ -224,19 +224,33 @@ print (keyword.kwlist)
 - 十六进制：
   - 拥有<ins>**前导字符0x(X)**</ins>的数字表示十六进制；
   - eg.0x11表示十六进制数11，十进制数17；
-# 2.6 Python命令行参数：
+# 2.6 表达式：
+- 概述：**产生**或**计算新数据值**的**代码片段**；
+- 作用：以**表达单一功能为目的**，运算后**产生运算结果**，运算结果的**类型由操作符/运算符决定**；
+- 组成：一般由**数据**和**操作符**等组成，是构成Python语句的重要组成部分；
+- 举例：
+```python
+# 命令行运行
+>>> 1024*32
+32768
+>>> "你"+"好"
+'你好'
+>>> 1024>32
+True
+```
+# 2.7 Python命令行参数：
 参考[菜鸟教程——Python3 命令行参数](https://www.runoob.com/python3/python3-command-line-arguments.html)
-## 2.6.1 命令行参数：
+## 2.7.1 命令行参数：
 使用命令行运行.py文件时，python后面的各字符（以空格分隔）均为命令行参数；
 ```python
 python test.py arg1 arg2 arg3
 的命令行参数有test.py、arg1、arg2、arg3
 ```
-## 2.6.2 利用sys模块获取命令行参数：
+## 2.7.2 利用sys模块获取命令行参数：
 - 获取命令行参数列表：```sys.argv```
 - 获取命令行参数个数：```len(sys.argv)```
 - 获取脚本名：```sys.argv[0]```
-## 2.6.3 利用getopt模块来获取命令行参数：
+## 2.7.3 利用getopt模块来获取命令行参数：
 - getopt.getopt()函数：
   - 函数原型：```getopt.getopt(args, shortopts, longopts=[])->opts, args```
   - 参数说明：
